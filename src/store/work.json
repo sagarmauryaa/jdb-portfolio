@@ -1,0 +1,41 @@
+[
+    {
+        "category": "Featured Work",
+        "grid": "aspect-[259/254]",
+        "items": [
+            {
+                "name": "Raymond",
+                "href": "/works/raymond",
+                "grid": "col-span-2 md:col-span-3 md:row-span-2"
+            },
+            {
+                "name": "Raymond",
+                "href": "/works/raymond",
+                "grid": "col-span-2 md:col-span-1 md:row-span-2"
+            },
+            {
+                "name": "Asian Paints",
+                "href": "/works/asianpaints",
+                "category": "Sonic Identity",
+                "grid": "aspect-[259/254]"
+                
+            }
+        ]
+    },
+    {
+        "category": "Ads",
+        "grid": "aspect-[826/524] col-span-1 md:col-span-3 md:row-span-2 lg:col-span-3",
+        "items": [
+            {
+                "name": "CaratLane",
+                "href": "/works/caratlane",
+                "grid": "aspect-[826/524] col-span-1 md:col-span-3 md:row-span-2 lg:col-span-3"
+            },
+            {
+                "name": "Pigeon India",
+                "href": "/works/pigeon",
+                "grid": "aspect-[826/524] col-span-1 md:col-span-3 md:row-span-2 lg:col-span-3"
+            }
+        ]
+    }
+]
