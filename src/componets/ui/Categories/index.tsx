@@ -37,13 +37,13 @@ const Categories = () => {
                             e.preventDefault();
                             const el = document.querySelector(item.href);
                             if (el) {
-                                const yOffset = -80; // adjust offset as needed
+                                const yOffset = -109; // adjust offset as needed
                                 const y = (el as HTMLElement).getBoundingClientRect().top + window.pageYOffset + yOffset;
                                 window.scrollTo({ top: y, behavior: 'smooth' });
                             }
                         }
                         }
-                        className="aspect-[259/254] bg-white rounded-lg text-primary p-4 border text-left flex justify-start items-start transition-colors duration-200 hover:bg-primary  hover:text-white shrink-0 w-1/2 xl:w-full cursor-pointer"
+                        className="aspect-[259/250] bg-white rounded-lg text-primary p-4 border text-left flex justify-start items-start transition-colors duration-200 hover:bg-primary  hover:text-white shrink-0 w-1/2 xl:w-full cursor-pointer"
                         type="button"
                     >
                         <span className="items-start">
