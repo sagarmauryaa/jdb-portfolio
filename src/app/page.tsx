@@ -1,5 +1,4 @@
-import workData from '@/store/work.json';
-import WorkSection from '@/componets/ui/WorkSection/inde';
+import workData from '@/store/work.json'; 
 import HeroBanner from '@/componets/ui/HeroBanner';
 import MarqueeBand from '@/componets/ui/MarqueeBand';
 import About from '@/componets/ui/About';
