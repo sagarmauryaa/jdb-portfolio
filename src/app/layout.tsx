@@ -6,8 +6,9 @@ import Footer from "@/componets/layout/footer";
 import "./globals.css";
 
 const staatlichesSans = Staatliches({
-  variable: "--font-staatliches" ,
-  weight: "400",
+  variable: "--font-staatliches",
+  weight: ["400"],
+  subsets: ["latin"],
 });
 
 const satoshi = localFont({
@@ -35,7 +36,7 @@ export default function RootLayout({
         <main className="flex flex-col min-h-screen gap-6 px-3 md:px-6 pb-4 md:pb-6 bg-white relative z-[1] pt-20 md:pt-28">
           {children}
         </main>
-        <Footer/>
+        <Footer />
       </body>
     </html>
   );
