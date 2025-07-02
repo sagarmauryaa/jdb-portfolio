@@ -65,7 +65,7 @@ export default function RootLayout({
         className={`${staatlichesSans.variable} ${satoshi.variable} antialiased`}
       >
         <Header />
-        <main className="flex flex-col min-h-screen gap-3 ld:gap-6 px-3 md:px-6 pb-4 md:pb-6 bg-white relative z-[1] pt-20 md:pt-28">
+        <main className="flex flex-col min-h-screen gap-3 lg:gap-6 px-3 md:px-6 pb-4 md:pb-6 bg-white relative z-[1] pt-20 md:pt-28">
           {children}
         </main>
         <Footer />

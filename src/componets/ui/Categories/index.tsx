@@ -37,7 +37,7 @@ const Categories = () => {
                             e.preventDefault();
                             const el = document.querySelector(item.href);
                             if (el) {
-                                const yOffset = -109; // adjust offset as needed
+                                const yOffset = -100; // adjust offset as needed
                                 const y = (el as HTMLElement).getBoundingClientRect().top + window.pageYOffset + yOffset;
                                 window.scrollTo({ top: y, behavior: 'smooth' });
                             }
