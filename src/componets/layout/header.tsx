@@ -15,7 +15,7 @@ const links = [
     }];
 const Header = () => {
     return (
-        <header className="fixed top-0 z-50 flex items-center justify-between w-full p-3 md:p-6">
+        <header className="fixed top-0 z-50 flex items-center justify-between w-full p-3 md:p-6 font-normal">
             <p className="text-lg md:text-xl bg-white p-3 md:p-4 rounded-lg text-primary border">
                 Joydeep Banerji
             </p>

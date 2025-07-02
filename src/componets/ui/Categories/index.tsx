@@ -43,13 +43,12 @@ const Categories = () => {
                             }
                         }
                         }
-                        className="aspect-[259/254] bg-white rounded-lg text-[40px] lg:text-5xl xl:text-5xl 2xl:text-[64px] font-bold font-staatliches text-primary p-4 lg:leading-11 xl:leading-13 2xl:leading-14 border text-left flex justify-start items-start transition-colors duration-200 hover:bg-primary leading-none hover:text-white shrink-0 w-1/2 xl:w-full"
-                        style={{ cursor: 'pointer' }}
+                        className="aspect-[259/254] bg-white rounded-lg text-primary p-4 border text-left flex justify-start items-start transition-colors duration-200 hover:bg-primary  hover:text-white shrink-0 w-1/2 xl:w-full cursor-pointer"
                         type="button"
                     >
                         <span className="items-start">
-                            <span className="inline">{item.title}</span>
-                            <sup className='font-satoshi text-xs md:text-[16px] relative -top-5'>&nbsp;({item.count})</sup>
+                            <span className="inline font-staatliches text-[40px] lg:text-5xl xl:text-5xl 2xl:text-[64px] leading-none lg:leading-11 xl:leading-13 2xl:leading-14">{item.title}</span>
+                            <sup className='text-xs md:text-[16px] relative -top-5 xl:-top-8 font-medium'>({item.count})</sup>
                         </span>
                     </button>
                 ))

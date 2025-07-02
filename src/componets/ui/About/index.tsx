@@ -6,7 +6,7 @@ const About = () => {
             <div className="absolute bottom-0 left-0 w-full h-full ">
                 <Image desktopSrc="" mobileSrc="" alt="" priority width={1392} height={720} className="top-0 left-0 object-cover w-full h-full" />
             </div>
-            <p className="text-[16px] md:text-xl leading-snug md:w-1/2 w-full py-10">Hey there! I’m a musician—but before all the notes and noise, I’m a human being and a full-time animal lover. (Enzo, my Labrador, insists I lead with that.)<br /><br />
+            <p className="text-[16px] md:text-xl leading-snug md:w-1/2 w-full py-10 font-normal">Hey there! I’m a musician—but before all the notes and noise, I’m a human being and a full-time animal lover. (Enzo, my Labrador, insists I lead with that.)<br /><br />
 
                 By day (and let’s be real, often by night), I compose, direct, and produce music. I’m based in Mumbai and have been telling stories through sound for over a decade—across films, web series, ads, and artist collabs. From intense drama scores to quirky jingles for food commercials, I live for that moment when the music locks in perfectly with the emotion. You know the one.<br /><br />
 

@@ -10,8 +10,7 @@
 }
 
 .font-satoshi {
-    font-family: var(--font-satoshi);
-    font-weight: 300;
+    font-family: var(--font-satoshi); 
     display: swap;
     font-style: normal;
 }
