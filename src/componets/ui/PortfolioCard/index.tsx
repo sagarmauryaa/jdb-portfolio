@@ -51,7 +51,7 @@ const ProfileFocusCard: React.FC = () => {
     return (
         <div
             ref={containerRef}
-            className="relative w-full p-6 md:p-10 rounded-xl overflow-hidden bg-white border shadow "
+            className="relative w-full px-3 py-12 md:p-10 rounded-xl overflow-hidden bg-white border shadow "
         >
             {/* Blurred text overlay */}
             <div
@@ -64,23 +64,24 @@ const ProfileFocusCard: React.FC = () => {
             />
 
             {/* Text content */}
-            <div className="relative  text-black text-center space-y-2 md:space-y-3 font-semibold">
-                <div className="text-base uppercase">Music Producer & Composer</div>
-                <div className="flex flex-wrap md:justify-center md:space-x-6 text-lg md:text-2xl leading-none">
+            <div className="relative  text-black gap-6 text-center flex flex-col space-y-2 md:space-y-3 font-semibold">
+                <div className="text-xs lg:text-base uppercase m-0">Music Producer & Composer</div>
+                <div className="flex flex-wrap justify-center md:space-x-6 text-lg md:text-2xl leading-none">
                     <span>
-                        <span className="text-base uppercase">Name&nbsp;&nbsp;</span><span className="inline text-[64px] font-staatliches">Joydeep Banerji</span>
+                        <span className="text-xs lg:text-base uppercase">Name&nbsp;&nbsp;</span><span className="inline text-4xl lg:text-[64px] font-staatliches">Joydeep Banerji</span>
                     </span>
                     <span>
-                        <span className="text-base uppercase">Experience&nbsp;&nbsp;</span><span className="inline text-[64px] font-staatliches">11 Years</span>
+                        <span className="text-xs lg:text-base uppercase">Experience&nbsp;&nbsp;</span><span className="inline text-4xl lg:text-[64px] font-staatliches">11 Years</span>
                     </span>
                     <span>
-                        <span className="text-base uppercase">City&nbsp;&nbsp;</span><span className="inline text-[64px] font-staatliches">Mumbai</span>
+                        <span className="text-xs lg:text-base uppercase">City&nbsp;&nbsp;</span><span className="inline text-4xl lg:text-[64px] font-staatliches">Mumbai</span>
                     </span>
                     <span>
-                        <span className="text-base uppercase">Services&nbsp;&nbsp;</span><span className="inline text-[64px] font-staatliches">Music Direction, Composition, Production<br /> Sonic Branding & Advertisements, Sound Design <br />Session Musician, Live Musician</span>
+                        <span className="text-xs lg:text-base uppercase">Services&nbsp;&nbsp;</span><span className="hidden lg:inline text-4xl lg:text-[64px] font-staatliches">Music Direction, Composition, Production<br /> Sonic Branding & Advertisements, Sound Design <br />Session Musician, Live Musician</span>
+                        <span className="inline lg:hidden text-4xl lg:text-[64px] font-staatliches">Music Direction,<br /> Composition, Production<br /> Sonic Branding & ads, Sound Design <br />Session Musician, Live Musician</span>
                     </span>
                     <span>
-                        <span className="text-base uppercase">BANDS&nbsp;&nbsp;</span><span className="inline text-[64px] font-staatliches">Midnite Djong, Tripolar, Indiva</span>
+                        <span className="text-xs lg:text-base uppercase">BANDS&nbsp;&nbsp;</span><span className="inline text-4xl lg:text-[64px] font-staatliches">Midnite Djong, Tripolar, Indiva</span>
                     </span>
                 </div>
             </div>
