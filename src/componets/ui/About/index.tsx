@@ -4,7 +4,7 @@ const About = () => {
     return (
         <section id="about" className="w-full h-full relative border rounded-lg flex items-center justify-end overflow-hidden p-4 md:p-6 ">
             <div className="absolute bottom-0 left-0 w-full h-full ">
-                <Image desktopSrc="/assets/about/desktop.png" mobileSrc="/assets/about/mbile.png" alt="" priority width={1392} height={720} className="top-0 left-0 object-cover w-full h-full z-[0]" />
+                <Image desktopSrc="/assets/about/desktop.png" mobileSrc="/assets/about/mobile.png" alt="" priority width={1392} height={720} className="top-0 left-0 object-cover w-full h-full z-[0]" />
             </div>
             <p className="text-[16px] md:text-xl leading-snug md:w-1/2 w-full py-10 font-normal relative text-white">Hey there! I’m a musician—but before all the notes and noise, I’m a human being and a full-time animal lover. (Enzo, my Labrador, insists I lead with that.)<br /><br />
 
