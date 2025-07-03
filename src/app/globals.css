@@ -10,7 +10,7 @@
 }
 
 .font-satoshi {
-    font-family: var(--font-satoshi); 
+    font-family: var(--font-satoshi);
     display: swap;
     font-style: normal;
 }
@@ -57,5 +57,22 @@ body {
 
     .slider button {
         width: 200px;
+    }
+
+    .adsWork {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .adsWork>h2 {
+        width: 100%;
+    }
+
+    .adsWork>a {
+        width: calc(50% - 6px);
+    }
+
+    .adsWork>a:last-child {
+        width: 100%;
     }
 }

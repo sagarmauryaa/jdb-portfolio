@@ -3,7 +3,7 @@ import { WorkCard } from "../WorkCard";
 
 const AdsWork = () => {
     return (
-        <section className="grid md:grid-cols-2 lg:grid-cols-5 gap-3 md:gap-6" id="ads">
+        <section className="grid md:grid-cols-2 lg:grid-cols-5 gap-3 md:gap-6 adsWork" id="ads">
             <h2 className="col-span-2 lg:col-span-1 row-span-2 aspect-[351/222] lg:aspect-[259/524] rounded-lg text-primary p-4 border text-left flex justify-start items-start transition-colors duration-200  bg-primary text-white">
                 <span className="items-start">
                     <span className="inline font-staatliches text-[40px] lg:text-5xl xl:text-5xl 2xl:text-[64px] leading-none lg:leading-11 xl:leading-13 2xl:leading-14 text-white">Ads</span>
@@ -28,7 +28,7 @@ const AdsWork = () => {
             <WorkCard img={{ desktop: "/assets/work/ads/desktop/15.png", mobile: "", alt: "" }} name="Federal Bank" category="Ads" href="https://www.youtube.com/watch?v=vGDEU8qb-tg&ab_channel=FederalBank" grid="col-span-1 row-span-1 lg:row-span-2 aspect-[259/250] lg:aspect-[259/524]" />
             <WorkCard img={{ desktop: "/assets/work/ads/desktop/16.png", mobile: "", alt: "" }} name="Nippon India" category="Ads" href="https://www.youtube.com/watch?v=S8-yEMwn8a8&ab_channel=NipponIndiaMutualFund" grid="col-span-1 row-span-1 lg:row-span-2 aspect-[259/250] lg:aspect-[259/524]" /> 
             <WorkCard img={{ desktop: "/assets/work/ads/desktop/17.png", mobile: "", alt: "" }} name="Air India" category="Ads" href="https://www.youtube.com/watch?v=ZRyIkmQL5nI&ab_channel=AirIndiaOfficial" grid="col-span-1 row-span-1 lg:row-span-2 aspect-[259/250] lg:aspect-[259/524]" />
-            <WorkCard img={{ desktop: "/assets/work/ads/desktop/18.png", mobile: "", alt: "" }} name="Asian Paints" category="Ads" href="https://www.youtube.com/watch?v=dynGK7IbfsU&ab_channel=AsianPaints" grid="col-span-1 lg:col-span-3 row-span-2 aspect-[259/250] lg:aspect-[826/524]" /> 
+            <WorkCard img={{ desktop: "/assets/work/ads/desktop/18.png", mobile: "", alt: "" }} name="Asian Paints" category="Ads" href="https://www.youtube.com/watch?v=dynGK7IbfsU&ab_channel=AsianPaints" grid="col-span-1 lg:col-span-3 row-span-2 aspect-[351/222] lg:aspect-[259/250] lg:aspect-[826/524]" /> 
         </section>
     )
 }
