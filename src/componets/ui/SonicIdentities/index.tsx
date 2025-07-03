@@ -11,13 +11,13 @@ const SonicIdentities = () => {
           <sup className='text-xs text-white  md:text-[16px] relative -top-5 xl:-top-8 font-medium'>(7)</sup>
         </span>
       </h2>
-      <WorkCard img={{ desktop: "", mobile: "", alt: "" }} name="O Maara" category="Series & Films" href="" grid="aspect-[259/250]" /> 
-      <WorkCard img={{ desktop: "", mobile: "", alt: "" }} name="O Maara" category="Series & Films" href="" grid="aspect-[259/250]" /> 
-      <WorkCard img={{ desktop: "", mobile: "", alt: "" }} name="O Maara" category="Series & Films" href="" grid="aspect-[259/250]" /> 
-      <WorkCard img={{ desktop: "", mobile: "", alt: "" }} name="O Maara" category="Series & Films" href="" grid="aspect-[259/250]" /> 
-      <WorkCard img={{ desktop: "", mobile: "", alt: "" }} name="O Maara" category="Series & Films" href="" grid="aspect-[259/250]" /> 
-      <WorkCard img={{ desktop: "", mobile: "", alt: "" }} name="O Maara" category="Series & Films" href="" grid="aspect-[259/250]" /> 
-      <WorkCard img={{ desktop: "", mobile: "", alt: "" }} name="O Maara" category="Series & Films" href="" grid="aspect-[259/250]" /> 
+      <WorkCard img={{ common: "/assets/work/sonic-identities/0.png", alt: "" }}  href="" grid="aspect-[259/250]" /> 
+      <WorkCard img={{ common: "/assets/work/sonic-identities/1.png", alt: "" }}  href="" grid="aspect-[259/250]" /> 
+      <WorkCard img={{ common: "/assets/work/sonic-identities/2.png", alt: "" }}  href="" grid="aspect-[259/250]" /> 
+      <WorkCard img={{ common: "/assets/work/sonic-identities/3.png", alt: "" }}  href="" grid="aspect-[259/250]" /> 
+      <WorkCard img={{ common: "/assets/work/sonic-identities/4.png", alt: "" }}  href="" grid="aspect-[259/250]" /> 
+      <WorkCard img={{ common: "/assets/work/sonic-identities/5.png", alt: "" }}  href="" grid="aspect-[259/250]" /> 
+      <WorkCard img={{ common: "/assets/work/sonic-identities/6.png", alt: "" }}  href="" grid="aspect-[259/250]" /> 
     </section>
   )
 }

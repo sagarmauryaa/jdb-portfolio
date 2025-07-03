@@ -11,10 +11,10 @@ const FeaturedWork = () => {
                     <sup className='text-xs md:text-[16px] text-white relative -top-5 xl:-top-8 font-medium'>(3)</sup>
                 </span>
             </h2>
-            <WorkCard img={{ desktop: "", mobile: "", alt: "" }} name="O Maara" category="Series & Films" href="" grid="aspect-[259/250] grid lg:hidden col-span-1" />
-            <WorkCard img={{ desktop: "", mobile: "", alt: "" }} name="O Maara" category="Series & Films" href="" grid="col-span-2 lg:col-span-3 row-span-2 aspect-[351/222] lg:aspect-[826/524]" />
-            <WorkCard img={{ desktop: "", mobile: "", alt: "" }} name="O Maara" category="Series & Films" href="" grid="col-span-2 lg:col-span-1 row-span-2 aspect-[351/222] lg:aspect-[259/524]" />
-            <WorkCard img={{ desktop: "", mobile: "", alt: "" }} name="O Maara" category="Series & Films" href="" grid="aspect-[259/250] lg:block hidden" />
+            <WorkCard img={{ common: "/assets/work/sonic-identities/0.png" , alt: "" }}  href="" grid="aspect-[259/250] grid lg:hidden col-span-1" />
+            <WorkCard img={{ desktop: "/assets/work/flims/0-desktop.png", mobile: "/assets/work/flims/0-mobile.png", alt: "" }} name="O Maara" category="Series & Films" href="https://www.youtube.com/watch?v=jNUINOVYYoE&ab_channel=SaregamaTamil" grid="col-span-2 lg:col-span-3 row-span-2 aspect-[351/222] lg:aspect-[826/524]" />
+            <WorkCard img={{ desktop: "/assets/work/flims/1-desktop.png", mobile: "/assets/work/flims/1-mobile.png", alt: "" }} name="rayMOND" category="Ads" href="https://www.youtube.com/watch?v=0f4oNqvli4k&ab_channel=EthnixByRaymond" grid="col-span-2 lg:col-span-1 row-span-2 aspect-[351/222] lg:aspect-[259/524]" />
+            <WorkCard img={{ common: "/assets/work/sonic-identities/0.png",  alt: "" }}  href="" grid="aspect-[259/250] lg:block hidden" />
         </section>
     )
 }

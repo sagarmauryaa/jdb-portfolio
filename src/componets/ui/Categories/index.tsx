@@ -28,7 +28,7 @@ const work = [
 ]
 const Categories = () => {
     return (
-        <section id="categories" className="flex flex-row overflow-x-scroll lg:overflow-visible xl:grid md:grid-cols-5 gap-4 md:gap-6 slider md:w-full">
+        <section id="categories" className="flex flex-row overflow-x-scroll xl:overflow-hidden xl:grid md:grid-cols-5 gap-4 md:gap-6 slider md:w-full">
             {
                 work.map((item, index) => (
                     <button
