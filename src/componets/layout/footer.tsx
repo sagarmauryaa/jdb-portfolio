@@ -1,7 +1,7 @@
 
 const Footer = () => {
     return (
-        <footer className="w-full px-4 md:px-6 sticky bottom-0 font-light" id="contact">
+        <footer className="w-full px-3 md:px-6 sticky bottom-0 font-light" id="contact">
             <div className="bg-primary flex flex-col gap-12 py-24 items-center rounded-lg justify-center p-6 text-white">
                 <p className=" text-md md:text-md uppercase">
                     GET IN TOUCH
