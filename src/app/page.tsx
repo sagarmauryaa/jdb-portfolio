@@ -16,14 +16,16 @@ export default function Home() {
     <>
       <HeroBanner />
       <MarqueeBand titles={["Human", "•", "Dreamer", "•", "Creator", "•"]} />
-      <Categories />
-      <FeaturedWork />
-      <SonicIdentities />
-      <AdsWork />
-      <ProfileFocusCard />
-      <Originals />
-      <ProducedArtists/>
-      <FlimSeries />
+      <section id="work">
+        <Categories />
+        <FeaturedWork />
+        <SonicIdentities />
+        <AdsWork />
+        <ProfileFocusCard />
+        <Originals />
+        <ProducedArtists />
+        <FlimSeries />
+      </section>
       <MarqueeBand titles={["About", "•", "About", "•", "About", "•"]} />
       <About />
 
