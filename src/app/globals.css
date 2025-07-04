@@ -59,6 +59,7 @@ body {
         width: 200px;
     }
 
+    .flimWork,
     .adsWork {
         display: flex;
         flex-wrap: wrap;
@@ -75,4 +76,17 @@ body {
     .adsWork>a:last-child {
         width: 100%;
     }
+
+    .flimWork>a.--full {
+        width: 100%; 
+    }
+
+    .flimWork>a:not(.--full) {
+        order: 1;
+    }
+
+    .flimWork>* {
+        width: calc(50% - 6px);
+    }
+
 }

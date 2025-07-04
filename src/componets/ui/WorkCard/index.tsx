@@ -12,7 +12,7 @@ export const WorkCard = ({ href, name = "", category = "", grid = '', img = { de
             background: "linear-gradient(to top, rgba(0,0,0,0.6) 20%, rgba(0,0,0,0) 100%)"
           }}
         >
-          <p className="font-staatliches text-2xl md:text-4xl m-0 p-0 leading-none">{name}</p>
+          <p className="font-staatliches text-2xl md:text-4xl m-0 p-0 leading-none w-40 md:w-full">{name}</p>
           <p className="text-sm md:text-xl m-0 p-0 leading-none ">{category}</p>
         </div>
       }
