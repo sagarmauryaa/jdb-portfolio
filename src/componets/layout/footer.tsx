@@ -2,7 +2,7 @@
 const Footer = () => {
     return (
         <footer className="w-full px-3 md:px-6 sticky bottom-0 font-light" id="contact">
-            <div className="bg-primary flex flex-col gap-12 py-24 items-center rounded-lg justify-center p-6 text-white">
+            <div className="bg-primary flex flex-col gap-8  md:gap-12 py-12 md:py-24 items-center rounded-lg justify-center p-6 text-white">
                 <p className=" text-md md:text-md uppercase">
                     GET IN TOUCH
                 </p>
@@ -10,13 +10,13 @@ const Footer = () => {
                     <p className="text-2xl sm:text-4xl md:text-5xl text-center leading-none md:leading-snug">
                         Wanna talk music, sound, or swap dog playlists?<br /> Let&apos;s connect.
                     </p>
-                    <div className="flex-wrap justify-center items-end gap-2 flex">
-                        <p className="text-xs sm:text-sm md:text-lg">CALL</p>
-                        <a href="tel:+919836739644" className="text-2xl sm:text-4xl md:text-5xl">(+91) 98367 39644</a>
+                    <div className="flex-col md:flex-wrap justify-center items-center md:items-end gap-2 flex">
+                        <p className="text-xs sm:text-sm md:text-lg block md:inline">CALL</p>
+                        <a href="tel:+919836739644" className="text-2xl sm:text-4xl md:text-5xl block md:inline">(+91) 98367 39644</a>
                     </div>
-                    <div className="flex-wrap justify-center items-end gap-2 flex">
-                        <p className="text-xs sm:text-sm md:text-lg">EMAIL</p>
-                        <a href="mailto:jbanerjimusic@gmail.com" className="text-2xl sm:text-4xl md:text-5xl">jbanerjimusic@gmail.com</a>
+                    <div className="flex-col md:flex-wrap justify-center items-center md:items-end gap-2 flex">
+                        <p className="text-xs sm:text-sm md:text-lg block md:inline">EMAIL</p>
+                        <a href="mailto:jbanerjimusic@gmail.com" className="text-2xl sm:text-4xl md:text-5xl block md:inline">jbanerjimusic@gmail.com</a>
                     </div>
                     <div className="flex items-center justify-center gap-6 pt-4">
                         <a href="https://www.instagram.com/_tripolar/" className="w-8 h-8" target="_blank" rel="noopener noreferrer">

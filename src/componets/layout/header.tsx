@@ -39,7 +39,7 @@ const Header = () => {
                     }
                 }
             }
-            if (!found && window.innerHeight + window.scrollY >= document.body.offsetHeight - 2) {
+            if (!found || window.innerHeight + window.scrollY >= document.body.offsetHeight - 2) {
                 setActiveLabel('Contact');
             }
         };
