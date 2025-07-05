@@ -11,7 +11,7 @@ const ProfileFocusCard: React.FC = () => {
         const mask = maskRef.current;
         if (!container || !mask || window.innerWidth < 1024) return;
 
-        const radius = 180;
+        const radius = 220;
 
         const handleMouseMove = (e: MouseEvent) => {
             const rect = container.getBoundingClientRect();
@@ -51,12 +51,12 @@ const ProfileFocusCard: React.FC = () => {
     return (
         <div
             ref={containerRef}
-            className="relative w-full px-3 py-12 md:p-10 rounded-xl overflow-hidden bg-white border shadow "
+            className="relative w-full px-3 py-12 md:p-10 rounded-xl group overflow-hidden bg-white border shadow "
         >
             {/* Blurred text overlay */}
             <div
                 ref={maskRef}
-                className="absolute inset-0 pointer-events-none backdrop-blur-sm z-[1] hidden lg:block"
+                className="absolute inset-0 pointer-events-none backdrop-blur-sm z-[1] hidden lg:block group-hover:opacity-100  opacity-0 transition-all "
                 style={{
                     WebkitMaskImage: "radial-gradient(circle 0px at 50% 50%, transparent 0%, rgba(0,0,0,1) 80%)",
                     maskImage: "radial-gradient(circle 0px at 50% 50%, transparent 0%, rgba(0,0,0,1) 80%)",
