@@ -1,3 +1,4 @@
+'use client';
 import React, { useRef, useEffect, useState } from "react";
 import { cn } from "@/utlis/cn";
 
@@ -72,7 +73,6 @@ export const SonicWorkCard = ({
     <div
       ref={cardRef}
       className={cn("block relative rounded-lg border overflow-hidden", grid)}
-      onClick={handleToggle}
       style={{ cursor: "pointer" }}
     >
       <img
@@ -82,30 +82,13 @@ export const SonicWorkCard = ({
         width={100}
         height={100}
       />
-      <audio ref={audioRef} src={src} />
-      <div className="absolute top-2 left-2 z-10">
-        {isPlaying ? (
-          <span>⏸️ Pause</span>
-        ) : (
-          <span>▶️ Play</span>
-        )}
-      </div>
-      {(name || category) && (
-        <div
-          className="absolute bottom-0 left-0 w-full h-fit flex flex-col justify-end min-h-20 md:min-h-32 gap-0 md:gap-1 p-4 text-white"
-          style={{
-            background:
-              "linear-gradient(to top, rgba(0,0,0,0.6) 20%, rgba(0,0,0,0) 100%)",
-          }}
-        >
-          <p className="font-staatliches text-2xl md:text-4xl m-0 p-0 leading-none">
-            {name}
-          </p>
-          <p className="text-sm md:text-xl m-0 p-0 leading-none ">
-            {category}
-          </p>
-        </div>
-      )}
+      <audio ref={audioRef} src={src} /> 
+      <button
+        className="absolute bottom-2 lg:bottom-4 left-2 lg:left-4 text-2xl font-staatliches"
+        type="button"
+        onClick={handleToggle}>
+        {isPlaying ? 'Pause' : 'Play'}
+      </button>
     </div>
   );
 };

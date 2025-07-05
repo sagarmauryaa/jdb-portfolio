@@ -1,3 +1,4 @@
+import { SonicWorkCard } from "../SonicWorkCard"
 import { WorkCard } from "../WorkCard"
 
 const SonicIdentities = () => {
@@ -11,13 +12,13 @@ const SonicIdentities = () => {
           <sup className='text-xs text-white  md:text-[16px] relative -top-5 xl:-top-8 font-medium'>(7)</sup>
         </span>
       </h2>
-      <WorkCard img={{ common: "/assets/work/sonic-identities/0.png", alt: "" }}  href="" grid="aspect-[259/250]" /> 
-      <WorkCard img={{ common: "/assets/work/sonic-identities/1.png", alt: "" }}  href="" grid="aspect-[259/250]" /> 
-      <WorkCard img={{ common: "/assets/work/sonic-identities/2.png", alt: "" }}  href="" grid="aspect-[259/250]" /> 
-      <WorkCard img={{ common: "/assets/work/sonic-identities/3.png", alt: "" }}  href="" grid="aspect-[259/250]" /> 
-      <WorkCard img={{ common: "/assets/work/sonic-identities/4.png", alt: "" }}  href="" grid="aspect-[259/250]" /> 
-      <WorkCard img={{ common: "/assets/work/sonic-identities/5.png", alt: "" }}  href="" grid="aspect-[259/250]" /> 
-      <WorkCard img={{ common: "/assets/work/sonic-identities/6.png", alt: "" }}  href="" grid="aspect-[259/250]" /> 
+      <SonicWorkCard src="/assets/work/sonic-identities/audio/0.wav" img={{ common: "/assets/work/sonic-identities/0.png", alt: "" }}grid="aspect-[259/250]" />  
+      <SonicWorkCard src="/assets/work/sonic-identities/audio/1.wav" img={{ common: "/assets/work/sonic-identities/1.png", alt: "" }}grid="aspect-[259/250]" />     
+      <SonicWorkCard src="/assets/work/sonic-identities/audio/2.wav" img={{ common: "/assets/work/sonic-identities/2.png", alt: "" }}grid="aspect-[259/250]" />     
+      <SonicWorkCard src="/assets/work/sonic-identities/audio/3.wav" img={{ common: "/assets/work/sonic-identities/3.png", alt: "" }}grid="aspect-[259/250]" />     
+      <SonicWorkCard src="/assets/work/sonic-identities/audio/4.wav" img={{ common: "/assets/work/sonic-identities/4.png", alt: "" }}grid="aspect-[259/250]" />     
+      <SonicWorkCard src="/assets/work/sonic-identities/audio/5.wav" img={{ common: "/assets/work/sonic-identities/5.png", alt: "" }}grid="aspect-[259/250]" />     
+      <SonicWorkCard src="/assets/work/sonic-identities/audio/6.wav" img={{ common: "/assets/work/sonic-identities/6.png", alt: "" }}grid="aspect-[259/250]" />     
     </section>
   )
 }
