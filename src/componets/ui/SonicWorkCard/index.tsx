@@ -72,8 +72,7 @@ export const SonicWorkCard = ({
   return (
     <div
       ref={cardRef}
-      className={cn("block relative rounded-lg border overflow-hidden", grid)}
-      style={{ cursor: "pointer" }}
+      className={cn("block relative rounded-lg border overflow-hidden", grid)} 
     >
       <img
         className="object-cover absolute bottom-0 left-0 w-full h-full"
@@ -84,7 +83,7 @@ export const SonicWorkCard = ({
       />
       <audio ref={audioRef} src={src} /> 
       <button
-        className="absolute bottom-2 lg:bottom-4 left-2 lg:left-4 text-2xl font-staatliches"
+        className="absolute bottom-2 lg:bottom-4 left-2 lg:left-4 text-2xl lg:text-4xl font-staatliches leading-none cursor-pointer"
         type="button"
         onClick={handleToggle}>
         {isPlaying ? 'Pause' : 'Play'}

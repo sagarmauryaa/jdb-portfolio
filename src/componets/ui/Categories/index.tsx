@@ -48,7 +48,7 @@ const Categories = () => {
                     >
                         <span className="items-start">
                             <span className="inline font-staatliches text-[32px] lg:text-5xl xl:text-5xl 2xl:text-[64px] leading-none lg:leading-11 xl:leading-13 2xl:leading-14">{item.title}</span>
-                            <sup className='text-xs md:text-[16px] relative -top-5 xl:-top-8 font-medium'>({item.count})</sup>
+                            <sup className='text-xs md:text-[16px] relative -top-[13px] lg:-top-5 xl:-top-8 font-medium'>({item.count})</sup>
                         </span>
                     </button>
                 ))
