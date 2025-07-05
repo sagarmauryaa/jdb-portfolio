@@ -6,15 +6,11 @@ import { cn } from "@/utlis/cn";
 let currentAudio: HTMLAudioElement | null = null;
 
 export const SonicWorkCard = ({
-  src,
-  name = "",
-  category = "",
+  src, 
   grid = "",
   img = { desktop: "", mobile: "", alt: "" },
 }: {
-  src: string;
-  category?: string;
-  name?: string;
+  src: string; 
   grid?: string;
   img: { common?: string; desktop?: string; mobile?: string; alt: string };
 }) => {

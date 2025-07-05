@@ -1,5 +1,4 @@
-import { SonicWorkCard } from "../SonicWorkCard"
-import { WorkCard } from "../WorkCard"
+import { SonicWorkCard } from "../SonicWorkCard" 
 
 const SonicIdentities = () => {
   return (
