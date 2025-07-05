@@ -48,7 +48,7 @@ body {
     }
 
     .slider button {
-        width: 40%;
+        width: 146px;
     }
 }
 
@@ -83,7 +83,7 @@ body {
     }
 
     .flimWork>a.--full {
-        width: 100%; 
+        width: 100%;
     }
 
     .flimWork>a:not(.--full) {
