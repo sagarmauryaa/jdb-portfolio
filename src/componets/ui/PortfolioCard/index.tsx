@@ -96,7 +96,7 @@ const ProfileFocusCard: React.FC = () => {
                     </span>
                     <span>
                         <span className="text-xs lg:text-base uppercase">Experience&nbsp;&nbsp;</span>
-                        <span className="inline text-4xl lg:text-[64px] font-staatliches">11 Years</span>
+                        <span className="inline text-4xl lg:text-[64px] font-staatliches">Eleven YEARS</span>
                     </span>
                     <span>
                         <span className="text-xs lg:text-base uppercase">City&nbsp;&nbsp;</span>
