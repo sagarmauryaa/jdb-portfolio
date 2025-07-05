@@ -1,42 +1,61 @@
 'use client';
 import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
+import html2canvas from "html2canvas-pro";
 
 const ProfileFocusCard: React.FC = () => {
     const containerRef = useRef<HTMLDivElement>(null);
-    const maskRef = useRef<HTMLDivElement>(null);
+    const lensRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
         const container = containerRef.current;
-        const mask = maskRef.current;
-        if (!container || !mask || window.innerWidth < 1024) return;
+        const lens = lensRef.current;
+        if (!container || !lens || window.innerWidth < 1024) return;
 
-        const radius = 220;
+        const lensSize = 200;
+        const scale = 1.5;
 
+        const styles = window.getComputedStyle(container);
+        console.log('Computed background-color:', styles.backgroundColor);
+        console.log('Computed color:', styles.color);
+
+        // Capture container as image
+        html2canvas(container, { backgroundColor: '#ffff', scale: 3 })
+            .then(canvas => {
+                const dataUrl = canvas.toDataURL(); 
+                lens.style.backgroundImage = `url(${dataUrl})`;
+                lens.style.backgroundRepeat = 'no-repeat';
+                lens.style.backgroundSize = `${container.offsetWidth * scale}px ${container.offsetHeight * scale}px`;
+            });
+ 
         const handleMouseMove = (e: MouseEvent) => {
             const rect = container.getBoundingClientRect();
-            const x = e.clientX - rect.left;
-            const y = e.clientY - rect.top;
+            let x = e.clientX - rect.left;
+            let y = e.clientY - rect.top;
 
-            gsap.to(mask, {
-                duration: 0.2,
-                ease: "power2.out",
-                WebkitMaskImage: `radial-gradient(circle ${radius}px at ${x}px ${y}px, transparent 0%, rgba(0,0,0,1) 80%)`,
-                maskImage: `radial-gradient(circle ${radius}px at ${x}px ${y}px, transparent 0%, rgba(0,0,0,1) 80%)`,
+            // Clamp so lens doesn’t go outside
+            x = Math.max(lensSize / 2, Math.min(x, rect.width - lensSize / 2));
+            y = Math.max(lensSize / 2, Math.min(y, rect.height - lensSize / 2));
+
+            // Move lens itself
+            gsap.to(lens, {
+                duration: 0.1,
+                x: x - lensSize / 2,
+                y: y - lensSize / 2,
+                opacity: 1,
+                ease: "power2.out"
             });
+
+            // Correct background offset:
+            const bgX = -((x * scale) - lensSize / 2);
+            const bgY = -((y * scale) - lensSize / 2);
+
+            lens.style.backgroundPosition = `${bgX}px ${bgY}px`;
         };
+            
 
-        const handleMouseLeave = (e: MouseEvent) => {
-            const rect = container.getBoundingClientRect();
-            const x = e.clientX - rect.left;
-            const y = e.clientY - rect.top;
-            // Move patch off screen (or to center & shrink) so entire text stays blurred
-            gsap.to(mask, {
-                duration: 0.2,
-                ease: "power2.out",
-                WebkitMaskImage: `radial-gradient(circle 0px at ${x}px ${y}px, transparent 0%, rgba(0,0,0,1) 80%)`,
-                maskImage: `radial-gradient(circle 0px at ${x}px ${y}px, transparent 0%, rgba(0,0,0,1) 80%)`,
-            });
+        const handleMouseLeave = () => {
+            gsap.to(lens, { opacity: 0, duration: 0.2 });
         };
 
         container.addEventListener("mousemove", handleMouseMove);
@@ -51,37 +70,50 @@ const ProfileFocusCard: React.FC = () => {
     return (
         <div
             ref={containerRef}
-            className="relative w-full px-3 py-12 md:p-10 rounded-xl group overflow-hidden bg-white border shadow "
+            className="relative w-full px-3 py-12 md:p-10 rounded-xl overflow-hidden bg-white border shadow"
+            style={{ backgroundColor: '#fff' }}
         >
-            {/* Blurred text overlay */}
+            {/* Magnifier lens */}
             <div
-                ref={maskRef}
-                className="absolute inset-0 pointer-events-none backdrop-blur-sm z-[1] hidden lg:block group-hover:opacity-100  opacity-0 transition-all "
+                ref={lensRef}
                 style={{
-                    WebkitMaskImage: "radial-gradient(circle 0px at 50% 50%, transparent 0%, rgba(0,0,0,1) 80%)",
-                    maskImage: "radial-gradient(circle 0px at 50% 50%, transparent 0%, rgba(0,0,0,1) 80%)",
-                }}
-            />
+                    maskImage: 'radial-gradient(circle, rgba(0,0,0,1) 65%, rgba(0,0,0,0) 100%)',
+                    WebkitMaskImage: 'radial-gradient(circle, rgba(0,0,0,1) 65%, rgba(0,0,0,0) 100%)',
+                    backgroundColor:'#fff',                
+                    backgroundRepeat: 'no-repeat',
+                    backgroundSize: 'cover' // replaced dynamically after capture
+                  }}
+                className="absolute top-0 left-0 w-[200px] h-[200px] border border-gray-200 rounded-full overflow-hidden pointer-events-none opacity-0 z-20"
+            ></div>
 
-            {/* Text content */}
-            <div className="relative  text-black gap-6 text-center flex flex-col space-y-2 md:space-y-3 font-semibold">
+            {/* Normal text */}
+            <div className="relative text-black gap-6 text-center flex flex-col space-y-2 md:space-y-3 font-semibold">
                 <div className="text-xs lg:text-base uppercase m-0">Music Producer & Composer</div>
                 <div className="flex flex-wrap justify-center md:space-x-6 text-lg md:text-2xl leading-none">
                     <span>
-                        <span className="text-xs lg:text-base uppercase">Name&nbsp;&nbsp;</span><span className="inline text-4xl lg:text-[64px] font-staatliches">Joydeep Banerji</span>
+                        <span className="text-xs lg:text-base uppercase">Name&nbsp;&nbsp;</span>
+                        <span className="inline text-4xl lg:text-[64px] font-staatliches">Joydeep Banerji</span>
                     </span>
                     <span>
-                        <span className="text-xs lg:text-base uppercase">Experience&nbsp;&nbsp;</span><span className="inline text-4xl lg:text-[64px] font-staatliches">11 Years</span>
+                        <span className="text-xs lg:text-base uppercase">Experience&nbsp;&nbsp;</span>
+                        <span className="inline text-4xl lg:text-[64px] font-staatliches">11 Years</span>
                     </span>
                     <span>
-                        <span className="text-xs lg:text-base uppercase">City&nbsp;&nbsp;</span><span className="inline text-4xl lg:text-[64px] font-staatliches">Mumbai</span>
+                        <span className="text-xs lg:text-base uppercase">City&nbsp;&nbsp;</span>
+                        <span className="inline text-4xl lg:text-[64px] font-staatliches">Mumbai</span>
                     </span>
                     <span>
-                        <span className="text-xs lg:text-base uppercase">Services&nbsp;&nbsp;</span><span className="hidden lg:inline text-4xl lg:text-[64px] font-staatliches">Music Direction, Composition, Production<br /> Sonic Branding & Advertisements, Sound Design <br />Session Musician, Live Musician</span>
-                        <span className="inline lg:hidden text-4xl lg:text-[64px] font-staatliches">Music Direction,<br /> Composition, Production<br /> Sonic Branding & ads, Sound Design <br />Session Musician, Live Musician</span>
+                        <span className="text-xs lg:text-base uppercase">Services&nbsp;&nbsp;</span>
+                        <span className="hidden lg:inline text-4xl lg:text-[64px] font-staatliches">
+                            Music Direction, Composition, Production<br /> Sonic Branding & Advertisements, Sound Design <br />Session Musician, Live Musician
+                        </span>
+                        <span className="inline lg:hidden text-4xl lg:text-[64px] font-staatliches">
+                            Music Direction,<br /> Composition, Production<br /> Sonic Branding & ads, Sound Design <br />Session Musician, Live Musician
+                        </span>
                     </span>
                     <span>
-                        <span className="text-xs lg:text-base uppercase">BANDS&nbsp;&nbsp;</span><span className="inline text-4xl lg:text-[64px] font-staatliches">Midnite Djong, Tripolar, Indiva</span>
+                        <span className="text-xs lg:text-base uppercase">BANDS&nbsp;&nbsp;</span>
+                        <span className="inline text-4xl lg:text-[64px] font-staatliches">Midnite Djong, Tripolar, Indiva</span>
                     </span>
                 </div>
             </div>
