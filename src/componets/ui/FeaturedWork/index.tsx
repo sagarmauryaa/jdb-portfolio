@@ -12,7 +12,7 @@ const FeaturedWork = () => {
                     <sup className='text-xs md:text-[16px] text-white relative -top-5 xl:-top-8 font-medium'>(3)</sup>
                 </span>
             </h2> 
-            <SonicWorkCard src="/assets/work/sonic-identities/audio/0.mp3" img={{ common: "/assets/work/sonic-identities/0.webp", alt: "" }} grid="aspect-[259/250] grid lg:hidden col-span-1" />
+        <SonicWorkCard src="/assets/work/sonic-identities/audio/0.mp3" img={{ common: "/assets/work/sonic-identities/0.webp", alt: "" }} grid="aspect-[259/250] grid lg:hidden col-span-1 mobile" />
             <WorkCard img={{ desktop: "/assets/work/flims/desktop/1.png", mobile: "/assets/work/flims/mobile/1.png", alt: "" }} name="O Maara" category="Series & Films" href="https://www.youtube.com/watch?v=jNUINOVYYoE&ab_channel=SaregamaTamil" grid="col-span-2 lg:col-span-3 row-span-2 --full-width aspect-[351/222] lg:aspect-[826/524]" />
             <WorkCard img={{ desktop: "/assets/work/flims/1-desktop.png", mobile: "/assets/work/flims/1-mobile.png", alt: "" }} name="rayMOND" category="Ads" href="https://www.youtube.com/watch?v=0f4oNqvli4k&ab_channel=EthnixByRaymond" grid="col-span-2 lg:col-span-1 row-span-2 --full-width aspect-[351/222] lg:aspect-[259/524]" />
             <SonicWorkCard src="/assets/work/sonic-identities/audio/0.mp3" img={{ common: "/assets/work/sonic-identities/0.webp", alt: "" }} grid="aspect-[259/250] lg:block hidden" /> 
