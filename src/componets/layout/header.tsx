@@ -56,7 +56,7 @@ const Header = () => {
                 {/* Dropdown for mobile */}
                 <div className="block md:hidden relative">
                     <button
-                        className="p-1 text-primary text-xl flex flex-row items-center gap-1 min-w-28 justify-between"
+                        className="p-1 text-primary text-lg md:text-xl flex flex-row items-center gap-1 min-w-28 justify-between"
                         onClick={() => setDropdownOpen((open) => !open)}
                     >
                         {activeLabel}
