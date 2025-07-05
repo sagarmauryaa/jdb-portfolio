@@ -43,12 +43,12 @@ const Categories = () => {
                             }
                         }
                         }
-                        className="aspect-[259/250] bg-white rounded-lg text-primary p-2 md:p-4 border text-left flex justify-start items-start transition-colors duration-200 hover:bg-primary  hover:text-white shrink-0 w-36 xl:w-full cursor-pointer"
+                        className="aspect-[259/250] bg-white rounded-lg text-primary p-2 md:p-4 border text-left flex justify-start items-start transition-colors duration-200 hover:bg-primary  hover:text-white shrink-0  cursor-pointer"
                         type="button"
                     >
                         <span className="items-start">
                             <span className="inline font-staatliches text-[32px] lg:text-5xl xl:text-5xl 2xl:text-[64px] leading-none lg:leading-11 xl:leading-13 2xl:leading-14">{item.title}</span>
-                            <sup className='text-xs md:text-[16px] relative -top-[13px] lg:-top-5 xl:-top-8 font-medium'>({item.count})</sup>
+                            <sup className='text-xs md:text-[16px] relative -top-[13px] lg:-top-5 font-medium'>({item.count})</sup>
                         </span>
                     </button>
                 ))
