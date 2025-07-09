@@ -53,7 +53,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <p className="text-center p-4 md:p-6 text-sm md:text-xl">&copy; JOYDEEP BANERJI {new Date().getFullYear()}. ALL RIGHTS RESERVED.</p>
+            <p className="text-center p-4 md:p-6 text-xs md:text-base font-medium">&copy; JOYDEEP BANERJI {new Date().getFullYear()}.<br className="block md:hidden"/> ALL RIGHTS RESERVED.</p>
         </footer>
     )
 }
