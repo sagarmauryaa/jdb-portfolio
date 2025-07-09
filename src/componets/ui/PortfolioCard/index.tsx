@@ -92,23 +92,23 @@ const ProfileFocusCard: React.FC = () => {
                 <div className="flex flex-wrap justify-center md:space-x-6 text-lg md:text-2xl leading-none">
                     <span>
                         <span className="text-xs lg:text-base uppercase font-medium">Name&nbsp;&nbsp;</span>
-                        <span className="inline text-4xl lg:text-5xl font-normal">Joydeep Banerji</span>
+                        <span className="inline text-3xl lg:text-5xl font-normal">Joydeep Banerji</span>
                     </span>
                     <span>
                         <span className="text-xs lg:text-base uppercase font-medium">Experience&nbsp;&nbsp;</span>
-                        <span className="inline text-4xl lg:text-5xl font-normal">Eleven YEARS</span>
+                        <span className="inline text-3xl lg:text-5xl font-normal">Eleven YEARS</span>
                     </span>
                     <span>
                         <span className="text-xs lg:text-base uppercase font-medium">City&nbsp;&nbsp;</span>
-                        <span className="inline text-4xl lg:text-5xl font-normal">Mumbai</span>
+                        <span className="inline text-3xl lg:text-5xl font-normal">Mumbai</span>
                     </span>
                     <span>
                         <span className="text-xs lg:text-base uppercase font-medium">Services&nbsp;&nbsp;</span>
-                        <span className="hidden lg:inline text-4xl lg:text-5xl font-normal">
-                            Music Direction, Composition, Production Sonic <br />Branding & Advertisements, Sound Design Session <br />Musician, Live Musician&nbsp;&nbsp;
+                        <span className="inline text-3xl lg:text-5xl font-normal">
+                            Music Direction, Composition, Production Sonic <br className="hidden md:block" />Branding & Advertisements, Sound Design Session <br className="hidden md:block" />Musician, Live Musician&nbsp;&nbsp;
                         </span> 
                         <span className="text-xs lg:text-base uppercase font-medium">BANDS&nbsp;&nbsp;</span>
-                        <span className="inline text-4xl lg:text-5xl font-normal">Midnite Djong, Tripolar, Indiva</span>
+                        <span className="inline text-3xl lg:text-5xl font-normal">Midnite Djong, Tripolar, Indiva</span>
                     </span>
                     <span>
                     </span>

@@ -4,7 +4,7 @@ const SonicIdentities = () => {
   return (
     <section className="grid md:grid-cols-2 lg:grid-cols-5 gap-3 md:gap-6" id="sonic-identities">
       <h2
-        className="--full-width aspect-[351/222] lg:aspect-[826/250] col-span-2 lg:col-span-3 rounded-lg text-primary p-2 lg:p-4 border text-left flex justify-start items-start transition-colors duration-200  bg-primary text-white"
+        className="--full-width aspect-[351/162] lg:aspect-[826/250] col-span-2 lg:col-span-3 rounded-lg text-primary p-2 lg:p-4 border text-left flex justify-start items-start transition-colors duration-200  bg-primary text-white"
       >
         <span className="items-start">
           <span className="inline workHeading">Sonic<br /> Identities</span>

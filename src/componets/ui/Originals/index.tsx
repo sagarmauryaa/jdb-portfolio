@@ -4,7 +4,7 @@ import { WorkCard } from "../WorkCard";
 const Originals = () => {
     return (
         <section className="grid md:grid-cols-2 lg:grid-cols-5 gap-3 md:gap-6" id="originals">
-            <h2 className="--full-width aspect-[351/222] lg:aspect-[524/250] col-span-2 lg:col-span-2  rounded-lg text-primary p-2 lg:p-4 border text-left flex justify-start items-start transition-colors duration-200  bg-primary text-white w-full">
+            <h2 className="--full-width aspect-[351/162] lg:aspect-[524/250] col-span-2 lg:col-span-2  rounded-lg text-primary p-2 lg:p-4 border text-left flex justify-start items-start transition-colors duration-200  bg-primary text-white w-full">
                 <span className="items-start">
                     <span className="inline workHeading">Originals</span>
                     <sup className='workSuperscript'>(4)</sup>
