@@ -33,6 +33,18 @@ body {
     height: calc(100vh - 130px);
 }
 
+.workCardTitle{
+    @apply  text-2xl leading-none lg:text-[32px] font-medium m-0 p-0;
+}
+
+.workHeading{
+    @apply text-[28px] lg:text-5xl leading-none tracking-tight text-white font-medium lg:font-normal;
+}
+
+.workSuperscript{
+    @apply text-xs lg:text-base font-medium leading-none tracking-tight text-white relative -top-2.5 pl-1 lg:-top-5;
+}
+
 
 /* @media only screen and (min-width:1160px) {
     .slider button {

@@ -92,28 +92,28 @@ const ProfileFocusCard: React.FC = () => {
                 <div className="flex flex-wrap justify-center md:space-x-6 text-lg md:text-2xl leading-none">
                     <span>
                         <span className="text-xs lg:text-base uppercase">Name&nbsp;&nbsp;</span>
-                        <span className="inline text-4xl lg:text-[64px] font-staatliches">Joydeep Banerji</span>
+                        <span className="inline text-4xl lg:text-[64px]">Joydeep Banerji</span>
                     </span>
                     <span>
                         <span className="text-xs lg:text-base uppercase">Experience&nbsp;&nbsp;</span>
-                        <span className="inline text-4xl lg:text-[64px] font-staatliches">Eleven YEARS</span>
+                        <span className="inline text-4xl lg:text-[64px]">Eleven YEARS</span>
                     </span>
                     <span>
                         <span className="text-xs lg:text-base uppercase">City&nbsp;&nbsp;</span>
-                        <span className="inline text-4xl lg:text-[64px] font-staatliches">Mumbai</span>
+                        <span className="inline text-4xl lg:text-[64px]">Mumbai</span>
                     </span>
                     <span>
                         <span className="text-xs lg:text-base uppercase">Services&nbsp;&nbsp;</span>
-                        <span className="hidden lg:inline text-4xl lg:text-[64px] font-staatliches">
+                        <span className="hidden lg:inline text-4xl lg:text-[64px]">
                             Music Direction, Composition, Production<br /> Sonic Branding & Advertisements, Sound Design <br />Session Musician, Live Musician
                         </span>
-                        <span className="inline lg:hidden text-4xl lg:text-[64px] font-staatliches">
+                        <span className="inline lg:hidden text-4xl lg:text-[64px]">
                             Music Direction,<br /> Composition, Production<br /> Sonic Branding & ads, Sound Design <br />Session Musician, Live Musician
                         </span>
                     </span>
                     <span>
                         <span className="text-xs lg:text-base uppercase">BANDS&nbsp;&nbsp;</span>
-                        <span className="inline text-4xl lg:text-[64px] font-staatliches">Midnite Djong, Tripolar, Indiva</span>
+                        <span className="inline text-4xl lg:text-[64px]">Midnite Djong, Tripolar, Indiva</span>
                     </span>
                 </div>
             </div>

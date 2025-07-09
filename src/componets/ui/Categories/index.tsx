@@ -2,26 +2,26 @@
 
 const work = [
     {
-        title: "sonic identities",
+        title: "Sonic Identities",
         href: "#sonic-identities",
         count: 7
     },
     {
-        title: "ads",
+        title: "Ads",
         href: "#ads",
         count: 19
     },
     {
-        title: "originals",
+        title: "Originals",
         href: "#originals",
         count: 4
     },
     {
-        title: "PRODUCED FOR ARTISTS",
+        title: "Produced for Artists",
         href: "#produced-for-artists",
         count: 2
     }, {
-        title: "films & series",
+        title: "Films & Series",
         href: "#films-series",
         count: 7
     }
@@ -47,8 +47,8 @@ const Categories = () => {
                         type="button"
                     >
                         <span className="items-start">
-                            <span className="inline font-staatliches text-[32px] lg:text-[44px] xl:text-5xl 2xl:text-[64px] leading-none lg:leading-11 xl:leading-13 2xl:leading-14">{item.title}</span>
-                            <sup className='text-xs md:text-[16px] relative -top-[13px] md:-top-2.5 lg:-top-5 xl:-top-8 font-medium'>({item.count})</sup>
+                            <span className="inline text-[28px] lg:text-5xl leading-none font-medium lg:font-normal">{item.title}</span>
+                            <sup className='text-xs md:text-[16px] relative -top-[13px] md:-top-2.5 lg:-top-5 font-medium'>({item.count})</sup>
                         </span>
                     </button>
                 ))

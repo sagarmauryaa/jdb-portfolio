@@ -5,12 +5,12 @@
         "items": [
             {
                 "name": "Raymond",
-                "href": "/works/raymond",
+                "href": "/works/Raymond",
                 "grid": "col-span-2 md:col-span-3 md:row-span-2"
             },
             {
                 "name": "Raymond",
-                "href": "/works/raymond",
+                "href": "/works/Raymond",
                 "grid": "col-span-2 md:col-span-1 md:row-span-2"
             },
             {
@@ -27,8 +27,8 @@
         "grid": "aspect-[826/524] col-span-1 md:col-span-3 md:row-span-2 lg:col-span-3",
         "items": [
             {
-                "name": "CaratLane",
-                "href": "/works/caratlane",
+                "name": "Caratlane",
+                "href": "/works/Caratlane",
                 "grid": "aspect-[826/524] col-span-1 md:col-span-3 md:row-span-2 lg:col-span-3"
             },
             {

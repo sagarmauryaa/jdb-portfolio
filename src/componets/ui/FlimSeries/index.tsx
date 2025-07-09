@@ -4,17 +4,17 @@ import { WorkCard } from "../WorkCard";
 const FlimSeries = () => {
     return (
         <section className="grid md:grid-cols-2 lg:grid-cols-5 gap-3 md:gap-6 flimWork" id="films-series">
-            <p className="aspect-[259/250] lg:aspect-[524/250]  lg:col-span-2  rounded-lg text-primary p-2 md:p-4 border text-left justify-start items-start text-2xl md:text-4xl text-pretty font-staatliches w-full leading-none lg:leading-snug hidden lg:flex">
-                AR Rahman • Adda  •  Spook Seekers •
+            <p className="aspect-[259/250] lg:aspect-[524/250]  lg:col-span-2  rounded-lg text-primary p-2 md:p-4 border text-left justify-start items-start text-2xl md:text-[32px] text-pretty w-full leading-snug hidden lg:flex font-medium ">
+                AR Rahman • Adda  •  Spook<br/> Seekers •
                 Oh! Mother
             </p>
             <h2 className="aspect-[259/250] lg:aspect-[524/250] col-span-1 lg:col-span-2 p-2 md:p-4 rounded-lg text-primary border text-left flex justify-start items-start bg-primary text-white md:w-full">
                 <span className="items-start ">
-                    <span className="inline font-staatliches text-[40px] lg:text-5xl xl:text-5xl 2xl:text-[64px] leading-none lg:leading-11 xl:leading-13 2xl:leading-14 text-white text-pretty">Flims & Series</span>
-                    <sup className='text-xs md:text-[16px] text-white relative -top-5 xl:-top-8 font-medium'>(7)</sup>
+                    <span className="inline workHeading text-pretty">Flims & Series</span>
+                    <sup className='workSuperscript'>(7)</sup>
                 </span>
             </h2>
-            <p className="aspect-[259/250] lg:aspect-[524/250]  lg:col-span-2  rounded-lg text-primary p-2 md:p-4 border text-left justify-start items-start text-2xl md:text-4xl text-pretty font-staatliches md:w-full leading-none lg:leading-snug flex lg:hidden">
+            <p className="aspect-[259/250] lg:aspect-[524/250]  lg:col-span-2  rounded-lg text-primary p-2 md:p-4 border text-left justify-start items-start text-2xl md:text-[32px] text-pretty md:w-full leading-none flex lg:hidden font-medium">
                 AR Rahman • Adda  •  Spook Seekers •
                 Oh! Mother
             </p> 

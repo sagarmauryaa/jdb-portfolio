@@ -79,10 +79,10 @@ export const SonicWorkCard = ({
       />
       <audio ref={audioRef} src={src} /> 
       <button
-        className="absolute bottom-2 lg:bottom-4 left-2 lg:left-4 text-2xl lg:text-4xl font-staatliches leading-none cursor-pointer"
+        className="absolute bottom-2 lg:bottom-4 left-2 lg:left-4 text-2xl lg:text-4xl leading-none cursor-pointer"
         type="button"
         onClick={handleToggle}>
-        {isPlaying ? 'Pause' : 'Play'}
+        {isPlaying ? <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="none"><path stroke="#000" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M10.5 30V6m15 24V6" /></svg> : <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="none"><path fill="#000" stroke="#000" strokeWidth="2" d="M26.96 16.406c2.05 1.142 2.057 2.58 0 3.87l-15.896 10.72c-1.997 1.067-3.353.437-3.496-1.869L7.501 6.69c-.045-2.125 1.705-2.725 3.372-1.706L26.96 16.406Z" /></svg>}
       </button>
     </div>
   );

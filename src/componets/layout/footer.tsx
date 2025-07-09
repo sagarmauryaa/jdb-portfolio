@@ -7,14 +7,14 @@ const Footer = () => {
                     GET IN TOUCH
                 </p>
                 <div className="flex flex-col items-center justify-center gap-4">
-                    <p className="text-2xl sm:text-4xl md:text-5xl text-center leading-none md:leading-snug">
-                        Wanna talk music, sound, or swap dog playlists?<br /> Let&apos;s connect.
+                    <p className="text-2xl sm:text-4xl md:text-5xl text-center leading-none">
+                        Wanna talk music, sound, or swap dog<br /> playlists? Let&apos;s connect.
                     </p>
-                    <div className="flex-col md:flex-wrap justify-center items-center md:items-end gap-2 flex">
+                    <div className="flex-col md:flex-row justify-center items-center md:items-end gap-2 flex">
                         <p className="text-xs sm:text-sm md:text-lg block md:inline">CALL</p>
                         <a href="tel:+919836739644" className="text-2xl sm:text-4xl md:text-5xl block md:inline">(+91) 98367 39644</a>
                     </div>
-                    <div className="flex-col md:flex-wrap justify-center items-center md:items-end gap-2 flex">
+                    <div className="flex-col md:flex-row justify-center items-center md:items-end gap-2 flex">
                         <p className="text-xs sm:text-sm md:text-lg block md:inline">EMAIL</p>
                         <a href="mailto:jbanerjimusic@gmail.com" className="text-2xl sm:text-4xl md:text-5xl block md:inline">jbanerjimusic@gmail.com</a>
                     </div>
