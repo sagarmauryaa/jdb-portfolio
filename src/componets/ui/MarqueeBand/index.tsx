@@ -44,7 +44,7 @@ const MarqueeBand = ({ titles }: { titles: string[] }) => {
                                     <span className="px-0">
                                         {item}
                                     </span>
-                                    <span className="text-7xl">
+                                    <span className="text-2xl lg:text-7xl">
                                         •
                                     </span>
                                 </React.Fragment>
