@@ -70,7 +70,7 @@ const ProfileFocusCard: React.FC = () => {
     return (
         <div
             ref={containerRef}
-            className="relative w-full px-3 py-12 md:p-10 rounded-xl overflow-hidden bg-white border shadow"
+            className="relative w-full px-3 py-12 md:p-16 rounded-xl overflow-hidden bg-white border shadow"
             style={{ backgroundColor: '#fff' }}
         >
             {/* Magnifier lens */}
@@ -87,33 +87,30 @@ const ProfileFocusCard: React.FC = () => {
             ></div>
 
             {/* Normal text */}
-            <div className="relative text-black gap-6 text-center flex flex-col space-y-2 md:space-y-3 font-semibold">
-                <div className="text-xs lg:text-base uppercase m-0">Music Producer & Composer</div>
+            <div className="relative text-black gap-6 text-center flex flex-col space-y-2 md:space-y-3 font-normal">
+                <div className="text-xs lg:text-base uppercase font-medium m-0">Music Producer & Composer</div>
                 <div className="flex flex-wrap justify-center md:space-x-6 text-lg md:text-2xl leading-none">
                     <span>
-                        <span className="text-xs lg:text-base uppercase">Name&nbsp;&nbsp;</span>
-                        <span className="inline text-4xl lg:text-[64px]">Joydeep Banerji</span>
+                        <span className="text-xs lg:text-base uppercase font-medium">Name&nbsp;&nbsp;</span>
+                        <span className="inline text-4xl lg:text-5xl font-normal">Joydeep Banerji</span>
                     </span>
                     <span>
-                        <span className="text-xs lg:text-base uppercase">Experience&nbsp;&nbsp;</span>
-                        <span className="inline text-4xl lg:text-[64px]">Eleven YEARS</span>
+                        <span className="text-xs lg:text-base uppercase font-medium">Experience&nbsp;&nbsp;</span>
+                        <span className="inline text-4xl lg:text-5xl font-normal">Eleven YEARS</span>
                     </span>
                     <span>
-                        <span className="text-xs lg:text-base uppercase">City&nbsp;&nbsp;</span>
-                        <span className="inline text-4xl lg:text-[64px]">Mumbai</span>
+                        <span className="text-xs lg:text-base uppercase font-medium">City&nbsp;&nbsp;</span>
+                        <span className="inline text-4xl lg:text-5xl font-normal">Mumbai</span>
                     </span>
                     <span>
-                        <span className="text-xs lg:text-base uppercase">Services&nbsp;&nbsp;</span>
-                        <span className="hidden lg:inline text-4xl lg:text-[64px]">
-                            Music Direction, Composition, Production<br /> Sonic Branding & Advertisements, Sound Design <br />Session Musician, Live Musician
-                        </span>
-                        <span className="inline lg:hidden text-4xl lg:text-[64px]">
-                            Music Direction,<br /> Composition, Production<br /> Sonic Branding & ads, Sound Design <br />Session Musician, Live Musician
-                        </span>
+                        <span className="text-xs lg:text-base uppercase font-medium">Services&nbsp;&nbsp;</span>
+                        <span className="hidden lg:inline text-4xl lg:text-5xl font-normal">
+                            Music Direction, Composition, Production Sonic <br />Branding & Advertisements, Sound Design Session <br />Musician, Live Musician&nbsp;&nbsp;
+                        </span> 
+                        <span className="text-xs lg:text-base uppercase font-medium">BANDS&nbsp;&nbsp;</span>
+                        <span className="inline text-4xl lg:text-5xl font-normal">Midnite Djong, Tripolar, Indiva</span>
                     </span>
                     <span>
-                        <span className="text-xs lg:text-base uppercase">BANDS&nbsp;&nbsp;</span>
-                        <span className="inline text-4xl lg:text-[64px]">Midnite Djong, Tripolar, Indiva</span>
                     </span>
                 </div>
             </div>

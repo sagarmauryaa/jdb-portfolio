@@ -19,9 +19,9 @@ export default function Home() {
       <section id="work" className='flex flex-col gap-3 lg:gap-6'>
         <Categories />
         <FeaturedWork />
+        <ProfileFocusCard />
         <SonicIdentities />
         <AdsWork />
-        <ProfileFocusCard />
         <Originals />
         <ProducedArtists />
         <FlimSeries />
