@@ -8,7 +8,7 @@ const Footer = () => {
                 </p>
                 <div className="flex flex-col items-center justify-center gap-4">
                     <p className="text-2xl sm:text-4xl md:text-5xl text-center leading-none">
-                        Wanna talk music, sound, or swap dog<br /> playlists? Let&apos;s connect.
+                        Wanna talk music, sound, or swap dog<br className="hidden md:block" /> playlists?<br className="block md:hidden" />  Let&apos;s connect.
                     </p>
                     <div className="flex-col md:flex-row justify-center items-center md:items-end gap-2 flex">
                         <p className="text-xs sm:text-sm md:text-lg block md:inline">CALL</p>
