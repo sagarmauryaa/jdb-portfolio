@@ -35,7 +35,7 @@ const MarqueeBand = ({ titles }: { titles: string[] }) => {
             <div ref={containerRef} className="relative w-full overflow-hidden">
                 <div
                     ref={trackRef}
-                    className="marquee-track flex will-change-transform font-normal"
+                    className="marquee-track flex gap-4 will-change-transform font-normal"
                 >
                     {[...Array(4)].map((_, i) => (
                         <div key={i} className="flex gap-4 items-center">
