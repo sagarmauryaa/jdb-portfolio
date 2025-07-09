@@ -7,7 +7,7 @@ export const WorkCard = ({ href, name = "", category = "", grid = '', img = { de
       <Image className="object-cover absolute bottom-0 left-0 w-full h-full group-hover:scale-110 transition-transform duration-400" commonSrc={img.common} desktopSrc={img.desktop} mobileSrc={img.mobile} alt={img.alt ?? ''} width={100} height={100} />
       {
         (name || category) &&
-        <div className="absolute bottom-0 left-0 w-full h-fit flex flex-col justify-end min-h-20 md:min-h-32 gap-0 md:gap-1.5 p-2 md:p-4 text-white"
+        <div className="absolute bottom-0 left-0 w-full h-fit flex flex-col justify-end min-h-20 md:min-h-32 gap-1 p-2 md:p-4 text-white"
           style={{
             background: "linear-gradient(to top, rgba(0,0,0,0.6) 20%, rgba(0,0,0,0) 100%)"
           }}
