@@ -105,10 +105,10 @@ const ProfileFocusCard: React.FC = () => {
                     <span>
                         <span className="text-xs lg:text-base uppercase font-medium">Services&nbsp;&nbsp;</span>
                         <span className="inline text-3xl lg:text-5xl font-normal">
-                            Music Direction, Composition, Production Sonic <br className="hidden md:block" />Branding & Advertisements, Sound Design Session <br className="hidden md:block" />Musician, Live Musician&nbsp;&nbsp;
+                            Music Direction, Composition, Production, Sonic <br className="hidden md:block" />Branding & Advertisements, Sound Design, Session <br className="hidden md:block" />Musician, Live Musician&nbsp;&nbsp;
                         </span> 
                         <span className="text-xs lg:text-base uppercase font-medium">BANDS&nbsp;&nbsp;</span>
-                        <span className="inline text-3xl lg:text-5xl font-normal">Midnite Djong, Tripolar, Indiva</span>
+                        <span className="inline text-3xl lg:text-5xl font-normal">Midnite Djong, Indiva</span>
                     </span>
                     <span>
                     </span>

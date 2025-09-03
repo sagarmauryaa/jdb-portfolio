@@ -13,7 +13,7 @@ export const WorkCard = ({ href, name = "", category = "", grid = '', img = { de
           }}
         >
           <p className="workCardTitle w-40 md:w-full">{name}</p>
-          <p className="text-xs md:text-xl m-0 p-0 leading-none font-medium md:font-normal">{category}</p>
+          <p className="text-xs md:text-base m-0 p-0 leading-none font-medium md:font-normal">{category}</p>
         </div>
       }
     </a>

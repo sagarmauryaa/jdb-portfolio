@@ -34,7 +34,7 @@ body {
 }
 
 .workCardTitle{
-    @apply  text-2xl leading-none lg:text-[32px] font-medium m-0 p-0;
+    @apply  text-2xl leading-tight lg:text-[32px] font-medium m-0 p-0;
 }
 
 .workHeading{
