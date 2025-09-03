@@ -11,8 +11,8 @@ const ProducedArtists = () => {
                     <sup className='workSuperscript'>(2)</sup>
                 </span>
             </h2>
-            <WorkCard img={{ desktop: "/assets/work/produced-for-artists/desktop/0.png", mobile: "/assets/work/produced-for-artists/mobile/0.png", alt: "" }} name="Hum" category="Sanaea Bubber" href="https://www.youtube.com/watch?v=8k6Q-4sDp6U&ab_channel=SanaeaBubber-Topic" grid="row-span-1 lg:row-span-2 aspect-[170/220] lg:aspect-[259/524]" /> 
-            <WorkCard img={{ desktop: "/assets/work/produced-for-artists/desktop/1.png", mobile: "/assets/work/produced-for-artists/mobile/1.png", alt: "" }} name="Infatuated" category="Asmi Aderay" href="https://www.youtube.com/watch?v=Ax4kitPdNy4&ab_channel=AsmiAderay-Topic" grid="aspect-[170/220] lg:aspect-[826/524] col-span-1 lg:col-span-3 row-span-1 lg:row-span-2" />
+            <WorkCard hasBrand={false} img={{ desktop: "/assets/work/produced-for-artists/desktop/0.png", mobile: "/assets/work/produced-for-artists/mobile/0.png", alt: "" }} name="Hum" category="Sanaea Bubber" href="https://www.youtube.com/watch?v=8k6Q-4sDp6U&ab_channel=SanaeaBubber-Topic" grid="row-span-1 lg:row-span-2 aspect-[170/220] lg:aspect-[259/524]" /> 
+            <WorkCard hasBrand={false} img={{ desktop: "/assets/work/produced-for-artists/desktop/1.png", mobile: "/assets/work/produced-for-artists/mobile/1.png", alt: "" }} name="Infatuated" category="Asmi Aderay" href="https://www.youtube.com/watch?v=Ax4kitPdNy4&ab_channel=AsmiAderay-Topic" grid="aspect-[170/220] lg:aspect-[826/524] col-span-1 lg:col-span-3 row-span-1 lg:row-span-2" />
            </section>
     )
 }

@@ -6,13 +6,15 @@ import { cn } from "@/utlis/cn";
 let currentAudio: HTMLAudioElement | null = null;
 
 export const SonicWorkCard = ({
-  src, 
+  src,
   grid = "",
   img = { desktop: "", mobile: "", alt: "" },
+  hasBrand = true
 }: {
-  src: string; 
+  src: string;
   grid?: string;
   img: { common?: string; desktop?: string; mobile?: string; alt: string };
+  hasBrand?: boolean
 }) => {
   const audioRef = useRef<HTMLAudioElement>(null);
   const cardRef = useRef<HTMLDivElement>(null);
@@ -68,8 +70,15 @@ export const SonicWorkCard = ({
   return (
     <div
       ref={cardRef}
-      className={cn("block relative rounded-lg border overflow-hidden", grid)} 
+      className={cn("block relative rounded-lg border overflow-hidden", grid)}
     >
+      {
+        hasBrand &&
+        <svg xmlns="http://www.w3.org/2000/svg" className="absolute z-[2] top-4 left-4" width="24" height="43" viewBox="0 0 24 43" fill="#DAAB4C" aria-hidden="true">
+          <path d="M1.597 16.776s2.849-.199 4.048.086c1.664.394 4.339 1.94 4.047 4.988-.26 2.689-3.32 2.934-4.9 2.382-2.108-.737-4.789-2.948-4.789-5.95V.708L1.597 0v16.776Z" />
+          <path d="M22.373 25.559s-2.993.288-4.238-.005c-1.728-.409-4.614-2.03-4.206-5.182.446-3.437 3.451-3.048 5.096-2.472 2.191.766 4.976 3.063 4.976 6.183v18.259l-1.598.659-.026-17.438-.004-.004Z" />
+        </svg>
+      }
       <img
         className="object-cover absolute bottom-0 left-0 w-full h-full"
         src={img.desktop || img.common}
@@ -77,9 +86,9 @@ export const SonicWorkCard = ({
         width={100}
         height={100}
       />
-      <audio ref={audioRef} src={src} /> 
+      <audio ref={audioRef} src={src} />
       <button
-        className="absolute bottom-2 lg:bottom-4 left-2 lg:left-4 text-2xl lg:text-4xl leading-none cursor-pointer" 
+        className="absolute bottom-2 lg:bottom-4 left-2 lg:left-4 text-2xl lg:text-4xl leading-none cursor-pointer"
         type="button"
         onClick={handleToggle}>
         {isPlaying ? (

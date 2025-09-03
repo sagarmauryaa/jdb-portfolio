@@ -17,7 +17,7 @@ const SonicIdentities = () => {
       <SonicWorkCard src="/assets/work/sonic-identities/audio/3.mp3" img={{ common: "/assets/work/sonic-identities/3.webp", alt: "" }}grid="aspect-[259/250]" />     
       <SonicWorkCard src="/assets/work/sonic-identities/audio/4.mp3" img={{ common: "/assets/work/sonic-identities/4.webp", alt: "" }}grid="aspect-[259/250]" />     
       <SonicWorkCard src="/assets/work/sonic-identities/audio/5.mp3" img={{ common: "/assets/work/sonic-identities/5.webp", alt: "" }}grid="aspect-[259/250]" />     
-      <SonicWorkCard src="/assets/work/sonic-identities/audio/6.mp3" img={{ common: "/assets/work/sonic-identities/6.webp", alt: "" }}grid="aspect-[259/250]" />     
+      <SonicWorkCard src="/assets/work/sonic-identities/audio/6.mp3" hasBrand={false} img={{ common: "/assets/work/sonic-identities/6.webp", alt: "" }}grid="aspect-[259/250]" />     
     </section>
   )
 }
