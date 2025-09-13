@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <>
       <HeroBanner />
-      <MarqueeBand titles={["Human", "Dreamer", "Creator"]} theme='light' />
+      <MarqueeBand titles={["Human", "Dreamer", "Creator"]}  />
       <section id="work" className='flex flex-col gap-3 lg:gap-6'>
         <Categories />
         <FeaturedWork />

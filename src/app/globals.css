@@ -1,11 +1,13 @@
 @import "tailwindcss";
 
-*{
-    color:#282828;
+* {
+    color: #282828;
 }
+
 .bg-primary {
     background-color: #282828;
 }
+
 .border {
     border: 1px solid #282828;
 }
@@ -42,15 +44,15 @@ body {
     height: calc(100vh - 130px);
 }
 
-.workCardTitle{
-    @apply  text-2xl leading-tight lg:text-[32px] font-medium m-0 p-0;
+.workCardTitle {
+    @apply text-2xl leading-tight lg:text-[32px] font-medium m-0 p-0;
 }
 
-.workHeading{
+.workHeading {
     @apply text-[28px] lg:text-5xl leading-none tracking-tight text-white font-medium lg:font-normal;
 }
 
-.workSuperscript{
+.workSuperscript {
     @apply text-xs lg:text-base font-medium leading-none tracking-tight text-white relative -top-2.5 pl-1 lg:-top-5;
 }
 
@@ -141,12 +143,26 @@ body {
 
 }
 
-.bg-black{
+.bg-black {
     background-color: #282828;
 }
-.bg-yellow{
+
+.bg-yellow {
     background-color: #F6F1EB;
 }
-.border-white{
+
+.border-white {
     border-color: #F8F3ED;
+}
+
+.marquee-sec {
+    width: calc(100% + 48px);
+    margin-left: -24px;
+}
+
+@media only screen and (max-width:1024px) {
+    .marquee-sec {
+        width: calc(100% + 28px);
+        margin-left: -16px;
+    }
 }
