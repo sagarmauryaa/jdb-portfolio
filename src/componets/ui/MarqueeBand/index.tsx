@@ -33,8 +33,8 @@ const MarqueeBand = ({ titles, theme = 'Dark' }: { titles: string[], theme?: str
     return (
         <section className={`
     overflow-hidden leading-none pb-1.5 md:pb-2.5 text-[64px] rounded-lg sm:text-[96px] md:text-[128px] whitespace-nowrap
-    ${theme === "light" ? "bg-white text-black border" : "bg-primary text-white"}
-  `}
+    `}
+    // ${theme === "light" ? "bg-white text-black border" : "bg-primary text-white"}
         >
             <div ref={containerRef} className="relative w-full overflow-hidden">
                 <div

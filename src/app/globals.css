@@ -1,12 +1,21 @@
 @import "tailwindcss";
 
-
+*{
+    color:#282828;
+}
 .bg-primary {
-    background-color: #000;
+    background-color: #282828;
+}
+.border {
+    border: 1px solid #282828;
+}
+
+.text-white {
+    color: #F8F3ED;
 }
 
 .text-primary {
-    color: #000;
+    color: #282828;
 }
 
 .font-satoshi {
@@ -130,4 +139,14 @@ body {
         aspect-ratio: 351/222;
     }
 
+}
+
+.bg-black{
+    background-color: #282828;
+}
+.bg-yellow{
+    background-color: #F6F1EB;
+}
+.border-white{
+    border-color: #F8F3ED;
 }

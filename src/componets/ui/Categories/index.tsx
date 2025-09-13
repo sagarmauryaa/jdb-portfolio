@@ -43,7 +43,7 @@ const Categories = () => {
                             }
                         }
                         }
-                        className="aspect-[259/250] bg-white rounded-lg text-primary p-2 md:p-4 border text-left flex justify-start items-start transition-colors duration-200 hover:bg-primary  hover:text-white shrink-0  cursor-pointer"
+                        className="aspect-[259/250] bg-white rounded-lg text-primary p-2 md:p-4 border bg-yellow text-left flex justify-start items-start transition-colors duration-200 hover:bg-primary  hover:text-white shrink-0  cursor-pointer"
                         type="button"
                     >
                         <span className="items-start">

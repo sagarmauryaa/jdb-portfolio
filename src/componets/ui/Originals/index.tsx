@@ -1,14 +1,20 @@
 import { WorkCard } from "../WorkCard"; 
+import { motion } from "framer-motion"
 
 
 const Originals = () => {
     return (
         <section className="grid md:grid-cols-2 lg:grid-cols-5 gap-3 md:gap-6" id="originals">
             <h2 className="--full-width aspect-[351/162] lg:aspect-[524/250] col-span-2 lg:col-span-2  rounded-lg text-primary p-2 lg:p-4 border text-left flex justify-start items-start transition-colors duration-200  bg-primary text-white w-full">
-                <span className="items-start">
+                <motion.span className="items-start"
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.4, ease: "easeOut" }}
+                    viewport={{ once: true, amount: 0.2 }}
+                    >
                     <span className="inline workHeading">Originals</span>
                     <sup className='workSuperscript'>(4)</sup>
-                </span>
+                </motion.span>
             </h2> 
             <WorkCard hasBrand={false} img={{ desktop: "/assets/work/originals/desktop/0.png", mobile: "/assets/work/originals/mobile/0.png", alt: "" }} name="Midnite Djong" category="Spotify" href="https://open.spotify.com/artist/4kIsd6vtW4fxTPDMyNcLdC" grid="col-span-2 lg:col-span-3 row-span-2 --full-width aspect-[351/222] lg:aspect-[826/524]" />
             <WorkCard hasBrand={false} img={{ desktop: "/assets/work/originals/desktop/1.png", mobile: "/assets/work/originals/mobile/1.png", alt: "" }} name="Joydeep Banerji" category="Originals" href="https://www.youtube.com/watch?v=OdmyNnaya4Y&ab_channel=JoydeepBanerji" grid="col-span-1 row-span-1 lg:row-span-2 aspect-[170/220] lg:aspect-[259/524]" /> 

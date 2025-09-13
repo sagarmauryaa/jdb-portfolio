@@ -49,19 +49,19 @@ const Header = () => {
     }, []);
     return (
         <header className="fixed top-0 z-50 flex items-start justify-between w-full p-3 md:p-6 font-normal pointer-events-none">
-            <p className="text-lg md:text-xl bg-white p-3 md:p-4 rounded-lg text-primary border pointer-events-auto">
+            <p className="text-lg md:text-xl bg-black  border-white p-3 md:p-4 rounded-lg text-white border pointer-events-auto">
                 Joydeep Banerji
             </p>
-            <nav className="p-2 rounded-lg border bg-white pointer-events-auto">
+            <nav className="p-2 rounded-lg border border-white bg-black  pointer-events-auto">
                 {/* Dropdown for mobile */}
                 <div className="block md:hidden relative">
                     <button
-                        className="p-1 text-primary text-lg md:text-xl flex flex-row items-center gap-1 min-w-28 justify-between"
+                        className="p-1 text-white text-lg md:text-xl flex flex-row items-center gap-1 min-w-28 justify-between"
                         onClick={() => setDropdownOpen((open) => !open)}
                     >
                         {activeLabel}
 
-                        <svg className={cn("w-4 h-4 text-primary" , dropdownOpen ? 'rotate-180' :'')} aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 8">
+                        <svg className={cn("w-4 h-4 text-white" , dropdownOpen ? 'rotate-180' :'')} aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 8">
                             <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="m1 1 5.326 5.7a.909.909 0 0 0 1.348 0L13 1"></path>
                         </svg>
                     </button>
@@ -73,7 +73,7 @@ const Header = () => {
                                     <li key={link.label}>
                                         <button
                                             type="button"
-                                            className="w-full text-left p-1 text-xl hover:bg-gray-100 text-primary"
+                                            className="w-full text-left p-1 text-xl hover:bg-gray-100 text-white"
                                             onClick={() => {
                                                 handlScrollTO(link.href, link.label);
                                                 setDropdownOpen(false);
@@ -89,7 +89,7 @@ const Header = () => {
                                 <li>
                                     <button
                                         type="button"
-                                        className="w-full text-left p-1 text-xl hover:bg-gray-100 text-primary"
+                                        className="w-full text-left p-1 text-xl hover:bg-gray-100 text-white"
                                         onClick={() => {
                                             window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
                                             setDropdownOpen(false);
@@ -104,11 +104,11 @@ const Header = () => {
                     </div>
                 </div>
                 {/* Desktop nav */}
-                <ul className="hidden md:flex items-center justify-end text-primary">
+                <ul className="hidden md:flex items-center justify-end text-white">
                     {
                         links.map((link) => (
                             <li key={link.label} className="">
-                                <button type="button" onClick={() => handlScrollTO(link.href, link.label)} className="cursor-pointer block text-xl text-primary p-2 tracking-tight">
+                                <button type="button" onClick={() => handlScrollTO(link.href, link.label)} className="cursor-pointer block text-xl text-white p-2 tracking-tight">
                                     {link.label}
                                 </button>
                             </li>
@@ -118,7 +118,7 @@ const Header = () => {
                         <button
                             type="button"
                             onClick={() => window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' })}
-                            className="cursor-pointer block text-xl text-primary p-2 tracking-tight"
+                            className="cursor-pointer block text-xl text-white p-2 tracking-tight"
                         >
                             Contact
                         </button>

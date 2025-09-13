@@ -20,7 +20,7 @@ const ProfileFocusCard: React.FC = () => {
         console.log('Computed color:', styles.color);
 
         // Capture container as image
-        html2canvas(container, { backgroundColor: '#ffff', scale: 3 })
+        html2canvas(container, { backgroundColor: '#F6F1EB', scale: 3 })
             .then(canvas => {
                 const dataUrl = canvas.toDataURL(); 
                 lens.style.backgroundImage = `url(${dataUrl})`;
@@ -70,8 +70,8 @@ const ProfileFocusCard: React.FC = () => {
     return (
         <div
             ref={containerRef}
-            className="relative w-full px-3 py-12 md:p-16 rounded-xl overflow-hidden bg-white border shadow"
-            style={{ backgroundColor: '#fff' }}
+            className="relative w-full px-3 py-12 md:p-16 rounded-xl overflow-hidden bg-yellow text-black border shadow"
+            style={{ backgroundColor: '#F6F1EB' }}
         >
             {/* Magnifier lens */}
             <div
@@ -79,7 +79,7 @@ const ProfileFocusCard: React.FC = () => {
                 style={{
                     maskImage: 'radial-gradient(circle, rgba(0,0,0,1) 65%, rgba(0,0,0,0) 100%)',
                     WebkitMaskImage: 'radial-gradient(circle, rgba(0,0,0,1) 65%, rgba(0,0,0,0) 100%)',
-                    backgroundColor:'#fff',                
+                    backgroundColor:'#F6F1EB',                
                     backgroundRepeat: 'no-repeat',
                     backgroundSize: 'cover' // replaced dynamically after capture
                   }}

@@ -99,7 +99,7 @@ export const SonicWorkCard = ({
             fill="none"
           >
             <path
-              stroke="#000"
+              stroke="#282828"
               strokeLinecap="round"
               strokeLinejoin="round"
               strokeWidth="3"
@@ -114,8 +114,8 @@ export const SonicWorkCard = ({
             fill="none"
           >
             <path
-              fill="#000"
-              stroke="#000"
+              fill="#282828"
+              stroke="#282828"
               strokeWidth="2"
               d="M26.96 16.406c2.05 1.142 2.057 2.58 0 3.87l-15.896 10.72c-1.997 1.067-3.353.437-3.496-1.869L7.501 6.69c-.045-2.125 1.705-2.725 3.372-1.706L26.96 16.406Z"
             />

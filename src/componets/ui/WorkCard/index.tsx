@@ -3,7 +3,7 @@ import { cn } from "@/utlis/cn"
 
 export const WorkCard = ({ href, name = "", category = "", grid = '', img = { desktop: "", mobile: "", alt: "", }, hasBrand = true }: { href: string, category?: string, name?: string, grid?: string, img: { common?: string, desktop?: string, mobile?: string, alt: string }, hasBrand?: boolean }) => {
   return (
-    <a href={href} className={cn("block relative rounded-lg border overflow-hidden  group", grid)} target="_blank" rel="noopener noreferrer">
+    <a href={href} className={cn("block relative rounded-lg border border-white overflow-hidden  group", grid)} target="_blank" rel="noopener noreferrer">
       {
         hasBrand &&
         <svg xmlns="http://www.w3.org/2000/svg" className="absolute z-[2] top-4 left-4" width="24" height="43" viewBox="0 0 24 43" fill="white" aria-hidden="true">
@@ -19,8 +19,8 @@ export const WorkCard = ({ href, name = "", category = "", grid = '', img = { de
             background: "linear-gradient(to top, rgba(0,0,0,0.6) 20%, rgba(0,0,0,0) 100%)"
           }}
         >
-          <p className="workCardTitle w-40 md:w-full">{name}</p>
-          <p className="text-xs md:text-base m-0 p-0 leading-none font-medium md:font-normal">{category}</p>
+            <p className="workCardTitle w-40 md:w-full text-white">{name}</p>
+            <p className="text-xs md:text-base m-0 p-0 leading-none font-medium md:font-normal text-white">{category}</p>
         </div>
       }
     </a>

@@ -1,20 +1,26 @@
 import { WorkCard } from "../WorkCard";
+import { motion } from "framer-motion"
 
 
 const FlimSeries = () => {
     return (
         <section className="grid md:grid-cols-2 lg:grid-cols-5 gap-3 md:gap-6 flimWork" id="films-series">
-            <h2 className="aspect-[259/250] lg:aspect-[524/250] col-span-1 lg:col-span-2 p-2 md:p-4 rounded-lg text-primary border text-left flex justify-start items-start bg-primary text-white md:w-full">
-                <span className="items-start ">
+            <h2 className="aspect-[259/250] lg:aspect-[524/250] col-span-1 lg:col-span-2 p-2 md:p-4 rounded-lg border text-left flex justify-start items-start bg-black text-white md:w-full">
+                <motion.span className="items-start "
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.4, ease: "easeOut" }}
+                    viewport={{ once: true, amount: 0.2 }}
+                >
                     <span className="inline workHeading text-pretty">Flims <br/>& Series</span>
                     <sup className='workSuperscript'>(7)</sup>
-                </span>
+                </motion.span>
             </h2>
-            <p className="aspect-[259/250] lg:aspect-[524/250]  lg:col-span-2  rounded-lg text-primary p-2 md:p-4 border text-left justify-start items-start text-2xl md:text-[32px] text-pretty w-full leading-snug flex font-medium ">
+            <p className="aspect-[259/250] lg:aspect-[524/250]  lg:col-span-2  rounded-lg text-black p-2 md:p-4 border text-left justify-start items-start text-2xl md:text-[32px] text-pretty w-full leading-snug flex font-medium ">
                 Thug Life - AR Rahman • Adda  •  Spook Seekers •
                 Oh! Mother
             </p>
-            <p className="aspect-[259/250] lg:aspect-[524/250]  lg:col-span-2  rounded-lg text-primary p-2 md:p-4 border text-left justify-start items-start text-2xl md:text-[32px] text-pretty md:w-full leading-none flex lg:hidden font-medium">
+            <p className="aspect-[259/250] lg:aspect-[524/250]  lg:col-span-2  rounded-lg text-black p-2 md:p-4 border text-left justify-start items-start text-2xl md:text-[32px] text-pretty md:w-full leading-none flex lg:hidden font-medium">
                 Thug Life - AR Rahman • Adda  •  Spook Seekers •
                 Oh! Mother
             </p> 

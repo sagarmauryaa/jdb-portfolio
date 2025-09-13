@@ -1,3 +1,4 @@
+"use client"
 import HeroBanner from '@/componets/ui/HeroBanner';
 import MarqueeBand from '@/componets/ui/MarqueeBand';
 import About from '@/componets/ui/About';

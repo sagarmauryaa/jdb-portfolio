@@ -5,7 +5,7 @@ import { motion } from "framer-motion"
 
 const HeroBanner = () => {
     return (
-        <section className="w-full banner h-full relative border rounded-lg overflow-hidden">
+        <section className="w-full banner h-full relative border border-white rounded-lg overflow-hidden">
             {/* Animated Image */}
             <motion.div
                 initial={{ scale: 1.3, x: 0, y: 0 }}  // start zoomed in (fullscreen feel)
