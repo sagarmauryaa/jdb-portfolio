@@ -35,22 +35,13 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Joydeep Banerji | Music Composer, Producer & Animal Lover",
     description: "Discover the creative world of Joydeep Banerji—music composer, producer, sonic architect, and devoted animal lover. Explore original music, sound design, and more.",
-    // url: "https://your-website-url.com",
-    type: "website",
-    // images: [
-    //   {
-    //     url: "https://your-website-url.com/og-image.jpg",
-    //     width: 1200,
-    //     height: 630,
-    //     alt: "Joydeep Banerji Portfolio",
-    //   },
-    // ],
+ 
+    type: "website", 
   },
   twitter: {
     card: "summary_large_image",
     title: "Joydeep Banerji | Music Composer, Producer & Animal Lover",
-    description: "Explore the music and creative journey of Joydeep Banerji—composer, producer, and animal lover.",
-    // images: ["https://your-website-url.com/og-image.jpg"],
+    description: "Explore the music and creative journey of Joydeep Banerji—composer, producer, and animal lover.",  
   },
 };
 
