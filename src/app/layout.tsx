@@ -3,10 +3,8 @@ import { Staatliches } from "next/font/google";
 import localFont from 'next/font/local'
 import Header from "@/componets/layout/header";
 import Footer from "@/componets/layout/footer";
-import { SpeedInsights } from "@vercel/speed-insights/next"
-
-import "./globals.css";
-import Script from "next/script";
+import { SpeedInsights } from "@vercel/speed-insights/next" 
+import "./globals.css"; 
 
 const staatlichesSans = Staatliches({
   variable: "--font-staatliches",
@@ -115,7 +113,7 @@ export default function RootLayout({
       <head>
         <link rel="preload" as="image" href="/assets/banner/desktop.webp" type="image/webp" />
         <link rel="preload" as="image" href="/assets/banner/mobile.webp" type="image/webp" media="(max-width: 768px)" />
-        <Script
+        <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
         />
