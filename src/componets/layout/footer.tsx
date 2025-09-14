@@ -1,25 +1,25 @@
 
 const Footer = () => {
     return (
-        <footer className="w-full px-3 md:px-6 sticky bottom-0 font-light" id="contact">
+        <footer className="w-full px-3 md:px-6 sticky bottom-0" id="contact">
             <div className="bg-primary flex flex-col gap-8  md:gap-12 py-12 md:py-24 items-center rounded-lg justify-center p-6 text-black bg-yellow">
                 <p className="text-md md:text-md uppercase font-medium">
                     GET IN TOUCH
                 </p>
                 <div className="flex flex-col items-center justify-center gap-4">
-                    <p className="text-2xl sm:text-4xl md:text-5xl text-center leading-none">
+                    <p className="text-2xl sm:text-4xl md:text-5xl text-center leading-none font-normal">
                         Wanna talk music, sound or swap dog<br className="hidden md:block" /> playlists?<br className="block md:hidden" />  Let&apos;s connect.
                     </p>
                     <div className="flex-col md:flex-row justify-center items-center md:items-end gap-2 flex">
                         <p className="text-md sm:text-sm md:text-lg block md:inline font-medium">CALL</p>
-                        <a href="tel:+919836739644" className="text-2xl sm:text-4xl md:text-5xl block md:inline">(+91) 98367 39644</a>
+                        <a href="tel:+919836739644" className="text-2xl sm:text-4xl md:text-5xl block md:inline font-normal">(+91) 98367 39644</a>
                     </div>
                     <div className="flex-col md:flex-row justify-center items-center md:items-end gap-2 flex">
                         <p className="text-md sm:text-sm md:text-lg block md:inline font-medium">EMAIL</p>
-                        <a href="mailto:jbanerjimusic@gmail.com" className="text-2xl sm:text-4xl md:text-5xl block md:inline">jbanerjimusic@gmail.com</a>
+                        <a href="mailto:jbanerjimusic@gmail.com" className="text-2xl sm:text-4xl md:text-5xl block md:inline font-normal">jbanerjimusic@gmail.com</a>
                     </div>
                     <div className="flex items-center justify-center gap-6 pt-4">
-                        <a href="https://www.instagram.com/_tripolar/" className="w-8 h-8 text-black" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.instagram.com/_tripolar/" className="w-6 md:w-8 h-6 md:h-8 text-black" target="_blank" rel="noopener noreferrer">
                             <svg width="32" height="32" viewBox="0 0 32 32" fill="none" className="h-full w-full" xmlns="http://www.w3.org/2000/svg">
                                 <g clipPath="url(#clip0_101_890)">
                                     <path d="M16 2.88125C20.275 2.88125 20.7813 2.9 22.4625 2.975C24.025 3.04375 24.8688 3.30625 25.4313 3.525C26.175 3.8125 26.7125 4.1625 27.2688 4.71875C27.8313 5.28125 28.175 5.8125 28.4625 6.55625C28.6813 7.11875 28.9438 7.96875 29.0125 9.525C29.0875 11.2125 29.1063 11.7188 29.1063 15.9875C29.1063 20.2625 29.0875 20.7688 29.0125 22.45C28.9438 24.0125 28.6813 24.8563 28.4625 25.4188C28.175 26.1625 27.825 26.7 27.2688 27.2563C26.7063 27.8188 26.175 28.1625 25.4313 28.45C24.8688 28.6688 24.0188 28.9313 22.4625 29C20.775 29.075 20.2688 29.0938 16 29.0938C11.725 29.0938 11.2188 29.075 9.5375 29C7.975 28.9313 7.13125 28.6688 6.56875 28.45C5.825 28.1625 5.2875 27.8125 4.73125 27.2563C4.16875 26.6938 3.825 26.1625 3.5375 25.4188C3.31875 24.8563 3.05625 24.0063 2.9875 22.45C2.9125 20.7625 2.89375 20.2563 2.89375 15.9875C2.89375 11.7125 2.9125 11.2063 2.9875 9.525C3.05625 7.9625 3.31875 7.11875 3.5375 6.55625C3.825 5.8125 4.175 5.275 4.73125 4.71875C5.29375 4.15625 5.825 3.8125 6.56875 3.525C7.13125 3.30625 7.98125 3.04375 9.5375 2.975C11.2188 2.9 11.725 2.88125 16 2.88125ZM16 0C11.6563 0 11.1125 0.01875 9.40625 0.09375C7.70625 0.16875 6.5375 0.44375 5.525 0.8375C4.46875 1.25 3.575 1.79375 2.6875 2.6875C1.79375 3.575 1.25 4.46875 0.8375 5.51875C0.44375 6.5375 0.16875 7.7 0.09375 9.4C0.01875 11.1125 0 11.6562 0 16C0 20.3438 0.01875 20.8875 0.09375 22.5938C0.16875 24.2938 0.44375 25.4625 0.8375 26.475C1.25 27.5313 1.79375 28.425 2.6875 29.3125C3.575 30.2 4.46875 30.75 5.51875 31.1562C6.5375 31.55 7.7 31.825 9.4 31.9C11.1063 31.975 11.65 31.9937 15.9938 31.9937C20.3375 31.9937 20.8813 31.975 22.5875 31.9C24.2875 31.825 25.4563 31.55 26.4688 31.1562C27.5188 30.75 28.4125 30.2 29.3 29.3125C30.1875 28.425 30.7375 27.5313 31.1438 26.4813C31.5375 25.4625 31.8125 24.3 31.8875 22.6C31.9625 20.8938 31.9813 20.35 31.9813 16.0063C31.9813 11.6625 31.9625 11.1188 31.8875 9.4125C31.8125 7.7125 31.5375 6.54375 31.1438 5.53125C30.75 4.46875 30.2063 3.575 29.3125 2.6875C28.425 1.8 27.5313 1.25 26.4813 0.84375C25.4625 0.45 24.3 0.175 22.6 0.1C20.8875 0.01875 20.3438 0 16 0Z" fill="currentColor" />
@@ -33,7 +33,7 @@ const Footer = () => {
                                 </defs>
                             </svg>
                         </a>
-                        <a href="https://www.linkedin.com/in/joydeep-banerji-327581121/" className="w-8 h-8 text-black" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.linkedin.com/in/joydeep-banerji-327581121/" className="w-6 md:w-8 h-6 md:h-8 text-black" target="_blank" rel="noopener noreferrer">
                             <svg width="32" height="32" viewBox="0 0 32 32" fill="none" className="h-full w-full" xmlns="http://www.w3.org/2000/svg">
                                 <g clipPath="url(#clip0_101_895)">
                                     <path d="M29.6313 0H2.3625C1.05625 0 0 1.03125 0 2.30625V29.6875C0 30.9625 1.05625 32 2.3625 32H29.6313C30.9375 32 32 30.9625 32 29.6938V2.30625C32 1.03125 30.9375 0 29.6313 0ZM9.49375 27.2687H4.74375V11.9937H9.49375V27.2687ZM7.11875 9.9125C5.59375 9.9125 4.3625 8.68125 4.3625 7.1625C4.3625 5.64375 5.59375 4.4125 7.11875 4.4125C8.6375 4.4125 9.86875 5.64375 9.86875 7.1625C9.86875 8.675 8.6375 9.9125 7.11875 9.9125ZM27.2687 27.2687H22.525V19.8438C22.525 18.075 22.4937 15.7937 20.0562 15.7937C17.5875 15.7937 17.2125 17.725 17.2125 19.7188V27.2687H12.475V11.9937H17.025V14.0813H17.0875C17.7188 12.8813 19.2688 11.6125 21.575 11.6125C26.3813 11.6125 27.2687 14.775 27.2687 18.8875V27.2687Z" fill="currentColor" />
@@ -45,10 +45,16 @@ const Footer = () => {
                                 </defs>
                             </svg>
                         </a>
-                        <a href="https://open.spotify.com/artist/4kIsd6vtW4fxTPDMyNcLdC" className="w-8 h-8 text-black" target="_blank" rel="noopener noreferrer">
+                        <a href="https://open.spotify.com/artist/4kIsd6vtW4fxTPDMyNcLdC" className="w-6 md:w-8 h-6 md:h-8 text-black" target="_blank" rel="noopener noreferrer">
                             <svg width="32" height="32" viewBox="0 0 32 32" fill="none" className="h-full w-full" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M15.951 0C7.14171 0 0 7.14152 0 15.9509C0 24.7606 7.14171 31.9015 15.951 31.9015C24.7613 31.9015 31.9023 24.7606 31.9023 15.9509C31.9023 7.1421 24.7613 0.000761901 15.9509 0.000761901L15.951 0ZM23.2661 23.0057C22.9804 23.4743 22.367 23.6229 21.8985 23.3352C18.1533 21.0476 13.4387 20.5295 7.88629 21.7981C7.35124 21.92 6.8179 21.5848 6.696 21.0495C6.57352 20.5143 6.90743 19.981 7.44381 19.859C13.52 18.4703 18.732 19.0686 22.9366 21.6381C23.4051 21.9257 23.5537 22.5371 23.2661 23.0057ZM25.2185 18.6619C24.8585 19.2476 24.0928 19.4324 23.508 19.0724C19.2204 16.4364 12.6846 15.6731 7.61314 17.2126C6.95543 17.4112 6.26076 17.0406 6.06114 16.384C5.86305 15.7263 6.2339 15.033 6.89048 14.833C12.6834 13.0752 19.8851 13.9267 24.809 16.9524C25.3937 17.3124 25.5785 18.0779 25.2185 18.6619ZM25.3861 14.1392C20.2451 11.0857 11.7632 10.805 6.85486 12.2947C6.06667 12.5337 5.23314 12.0888 4.99429 11.3006C4.75543 10.512 5.2 9.67905 5.98876 9.43943C11.6232 7.72895 20.9899 8.05943 26.9088 11.5731C27.6192 11.9939 27.8516 12.9095 27.4307 13.6175C27.0116 14.3265 26.0935 14.5602 25.3869 14.1392H25.3861Z" fill="currentColor" />
                             </svg>
+                        </a>
+                        <a href="https://api.whatsapp.com/send?phone=919836739644&text=Hi Joydeep, I came across your work—would love to connect." className="w-6 md:w-8 h-6 md:h-8 text-black" target="_blank" rel="noopener noreferrer">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" className="h-full w-full" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 32L2.24933 23.7827C0.861331 21.3773 0.132 18.6507 0.133333 15.8547C0.137333 7.11333 7.25065 0 15.9906 0C20.232 0.00133333 24.2133 1.65333 27.2079 4.65067C30.2013 7.648 31.8493 11.632 31.8479 15.8693C31.8439 24.612 24.7306 31.7253 15.9906 31.7253C13.3373 31.724 10.7226 31.0587 8.40665 29.7947L0 32ZM8.79598 26.924C11.0306 28.2507 13.164 29.0453 15.9853 29.0467C23.2493 29.0467 29.1666 23.1347 29.1706 15.8667C29.1733 8.584 23.2839 2.68 15.996 2.67733C8.72665 2.67733 2.81333 8.58933 2.81066 15.856C2.80933 18.8227 3.67866 21.044 5.13866 23.368L3.80666 28.232L8.79598 26.924ZM23.9786 19.6387C23.8799 19.4733 23.6159 19.3747 23.2186 19.176C22.8226 18.9773 20.8746 18.0187 20.5106 17.8867C20.148 17.7547 19.884 17.688 19.6186 18.0853C19.3546 18.4813 18.5946 19.3747 18.364 19.6387C18.1333 19.9027 17.9013 19.936 17.5053 19.7373C17.1093 19.5387 15.832 19.1213 14.3186 17.7707C13.1413 16.72 12.3453 15.4227 12.1146 15.0253C11.884 14.6293 12.0906 14.4147 12.288 14.2173C12.4666 14.04 12.684 13.7547 12.8826 13.5227C13.084 13.2933 13.1493 13.128 13.2826 12.8627C13.4146 12.5987 13.3493 12.3667 13.2493 12.168C13.1493 11.9707 12.3573 10.02 12.028 9.22667C11.7053 8.45467 11.3786 8.55867 11.136 8.54667L10.376 8.53333C10.112 8.53333 9.68264 8.632 9.31998 9.02933C8.95731 9.42667 7.93332 10.384 7.93332 12.3347C7.93332 14.2853 9.35331 16.1693 9.55064 16.4333C9.74931 16.6973 12.344 20.7 16.3186 22.416C17.264 22.824 18.0026 23.068 18.5773 23.2507C19.5266 23.552 20.3906 23.5093 21.0733 23.408C21.8346 23.2947 23.4173 22.4493 23.7479 21.524C24.0786 20.5973 24.0786 19.804 23.9786 19.6387Z" fill="currentColor" />
+                            </svg>
+
                         </a>
                     </div>
                 </div>
