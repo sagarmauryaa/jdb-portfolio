@@ -1,7 +1,11 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  images: {
+    minimumCacheTTL: 604800,
+    formats: ["image/webp", "image/avif"],
+  },
+  output: "export", 
 };
 
 export default nextConfig;
