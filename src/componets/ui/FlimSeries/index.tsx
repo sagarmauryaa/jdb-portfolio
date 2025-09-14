@@ -16,7 +16,7 @@ const FlimSeries = () => {
                     <sup className='workSuperscript'>(7)</sup>
                 </motion.span>
             </h2>
-            <p className="aspect-[259/250] lg:aspect-[524/250]  lg:col-span-2  rounded-lg text-black p-2 md:p-4 border text-left justify-start items-start text-2xl md:text-[32px] text-pretty w-full leading-snug flex font-medium ">
+            <p className="aspect-[259/250] lg:aspect-[524/250]  lg:col-span-2  rounded-lg text-black p-2 md:p-4 border text-left justify-start items-start text-2xl md:text-[32px] text-pretty w-full leading-snug hidden lg:flex font-medium ">
                 Thug Life - AR Rahman • Adda  •  Spook Seekers •
                 Oh! Mother
             </p>
