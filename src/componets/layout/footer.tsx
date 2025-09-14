@@ -3,7 +3,7 @@ const Footer = () => {
     return (
         <footer className="w-full px-3 md:px-6 sticky bottom-0 font-light" id="contact">
             <div className="bg-primary flex flex-col gap-8  md:gap-12 py-12 md:py-24 items-center rounded-lg justify-center p-6 text-black bg-yellow">
-                <p className=" text-md md:text-md uppercase font-medium">
+                <p className="text-md md:text-md uppercase font-medium">
                     GET IN TOUCH
                 </p>
                 <div className="flex flex-col items-center justify-center gap-4">
@@ -11,11 +11,11 @@ const Footer = () => {
                         Wanna talk music, sound or swap dog<br className="hidden md:block" /> playlists?<br className="block md:hidden" />  Let&apos;s connect.
                     </p>
                     <div className="flex-col md:flex-row justify-center items-center md:items-end gap-2 flex">
-                        <p className="text-xs sm:text-sm md:text-lg block md:inline font-medium">CALL</p>
+                        <p className="text-md sm:text-sm md:text-lg block md:inline font-medium">CALL</p>
                         <a href="tel:+919836739644" className="text-2xl sm:text-4xl md:text-5xl block md:inline">(+91) 98367 39644</a>
                     </div>
                     <div className="flex-col md:flex-row justify-center items-center md:items-end gap-2 flex">
-                        <p className="text-xs sm:text-sm md:text-lg block md:inline font-medium">EMAIL</p>
+                        <p className="text-md sm:text-sm md:text-lg block md:inline font-medium">EMAIL</p>
                         <a href="mailto:jbanerjimusic@gmail.com" className="text-2xl sm:text-4xl md:text-5xl block md:inline">jbanerjimusic@gmail.com</a>
                     </div>
                     <div className="flex items-center justify-center gap-6 pt-4">

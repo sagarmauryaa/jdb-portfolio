@@ -61,7 +61,7 @@ const Header = () => {
                     >
                         {activeLabel}
 
-                        <svg className={cn("w-4 h-4 text-white" , dropdownOpen ? 'rotate-180' :'')} aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 8">
+                        <svg className={cn("w-4 h-4 !text-white" , dropdownOpen ? 'rotate-180' :'')} aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 8">
                             <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="m1 1 5.326 5.7a.909.909 0 0 0 1.348 0L13 1"></path>
                         </svg>
                     </button>
