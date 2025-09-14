@@ -6,6 +6,7 @@ import Footer from "@/componets/layout/footer";
 import { SpeedInsights } from "@vercel/speed-insights/next"
 
 import "./globals.css";
+import Script from "next/script";
 
 const staatlichesSans = Staatliches({
   variable: "--font-staatliches",
@@ -112,9 +113,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <script type="application/ld+json">
-          {JSON.stringify(schema)}
-        </script>
+        <link rel="preload" as="image" href="/assets/banner/desktop.webp" type="image/webp" />
+        <link rel="preload" as="image" href="/assets/banner/mobile.webp" type="image/webp" media="(max-width: 768px)" />
+        <Script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        />
       </head>
       <body
         className={`${staatlichesSans.variable} ${satoshi.variable} antialiased`}

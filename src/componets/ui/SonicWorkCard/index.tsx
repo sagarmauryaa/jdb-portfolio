@@ -90,6 +90,8 @@ export const SonicWorkCard = ({
       <button
         className="absolute bottom-2 lg:bottom-4 left-2 lg:left-4 text-2xl lg:text-4xl leading-none cursor-pointer"
         type="button"
+        aria-pressed={isPlaying} 
+        aria-label={isPlaying ? "Pause music" : "Play music"}  
         onClick={handleToggle}>
         {isPlaying ? (
           <svg
@@ -97,6 +99,7 @@ export const SonicWorkCard = ({
             viewBox="0 0 36 36"
             className="w-6 h-6 md:w-9 md:h-9"
             fill="none"
+            aria-hidden="true" 
           >
             <path
               stroke="#282828"
@@ -112,6 +115,7 @@ export const SonicWorkCard = ({
             viewBox="0 0 36 36"
             className="w-6 h-6 md:w-9 md:h-9"
             fill="none"
+              aria-hidden="true" 
           >
             <path
               fill="#282828"
