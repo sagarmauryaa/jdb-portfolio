@@ -65,7 +65,45 @@ export const metadata: Metadata = {
   },
 };
 
-
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "url": "https://joydeepbanerji.com",
+  "name": "Joydeep Banerji | Music Composer & Producer",
+  "description": "Official portfolio of Joydeep Banerji – music composer, producer, and sound designer. Explore original music, film scores, sound design projects, and his creative journey inspired by his Labrador, Enzo.",
+  "inLanguage": "en",
+  "publisher": {
+    "@type": "Person",
+    "name": "Joydeep Banerji",
+    "url": "https://joydeepbanerji.com",
+    "image": "https://joydeepbanerji.com/og-image.jpg",
+    "sameAs": [
+      "https://www.instagram.com/_tripolar/", 
+      "https://open.spotify.com/artist/4kIsd6vtW4fxTPDMyNcLdC",
+      "https://www.linkedin.com/in/joydeep-banerji-327581121/",
+      "https://api.whatsapp.com/send?phone=919836739644&text=Hi Joydeep, I came across your work—would love to connect."
+    ],
+    "jobTitle": "Music Composer, Producer & Sound Designer",
+    "knowsAbout": ["Music Composition", "Music Production", "Sound Design", "Film Scoring", "Audio Engineering"]
+  },
+  "mainEntity": {
+    "@type": "Person",
+    "name": "Joydeep Banerji",
+    "url": "https://joydeepbanerji.com",
+    "image": "https://joydeepbanerji.com/og-image.jpg",
+    "description": "Joydeep Banerji is a music composer, producer, and sound designer creating original music, soundtracks, and audio experiences.",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Independent Musician"
+    }, 
+    "sameAs": [
+      "https://www.instagram.com/_tripolar/", 
+      "https://open.spotify.com/artist/4kIsd6vtW4fxTPDMyNcLdC",
+      "https://www.linkedin.com/in/joydeep-banerji-327581121/",
+      "https://api.whatsapp.com/send?phone=919836739644&text=Hi Joydeep, I came across your work—would love to connect."
+    ]
+  }
+};
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -73,6 +111,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <script type="application/ld+json">
+          {JSON.stringify(schema)}
+        </script>
+      </head>
       <body
         className={`${staatlichesSans.variable} ${satoshi.variable} antialiased`}
       >
