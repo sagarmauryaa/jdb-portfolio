@@ -12,7 +12,7 @@ const FlimSeries = () => {
                     transition={{ duration: 0.4, ease: "easeOut" }}
                     viewport={{ once: true, amount: 0.2 }}
                 >
-                    <span className="inline workHeading text-pretty">Flims <br/>& Series</span>
+                    <span className="inline workHeading text-pretty">Flims <br />& Series</span>
                     <sup className='workSuperscript'>(7)</sup>
                 </motion.span>
             </h2>
@@ -23,14 +23,14 @@ const FlimSeries = () => {
             <p className="aspect-[259/250] lg:aspect-[524/250]  lg:col-span-2  rounded-lg text-black p-2 md:p-4 border text-left justify-start items-start text-2xl md:text-[32px] text-pretty md:w-full leading-none flex lg:hidden font-medium">
                 Thug Life - AR Rahman • Adda  •  Spook Seekers •
                 Oh! Mother
-            </p> 
+            </p>
             <WorkCard hasBrand={false} img={{ desktop: "/assets/work/flims/desktop/0.png", mobile: "/assets/work/flims/mobile/0.png", alt: "" }} name="Thik Bhul" category="Film: Adda" href="https://www.youtube.com/watch?v=BFk6dJvWNbw&ab_channel=MaximPictures" grid="col-span-1 row-span-1 lg:row-span-2 aspect-[170/220] lg:aspect-[259/524]" />
             <WorkCard hasBrand={false} img={{ desktop: "/assets/work/flims/desktop/1.png", mobile: "/assets/work/flims/mobile/1.png", alt: "" }} name="O Maara" category="Film: Thug Life" href="https://www.youtube.com/watch?v=jNUINOVYYoE&ab_channel=SaregamaTamil" grid="col-span-2 lg:col-span-3 row-span-2 --full-width aspect-[351/222] lg:aspect-[826/524]   --full" />
-            <WorkCard hasBrand={false} img={{ desktop: "/assets/work/flims/desktop/2.png", mobile: "/assets/work/flims/mobile/2.png", alt: "" }} name="Shut Up" category="Film: Adda" href="https://www.youtube.com/watch?v=7h9w3H93M0o&ab_channel=TripolarTV" grid="col-span-1 row-span-1 lg:row-span-2 aspect-[170/220] lg:aspect-[259/524]" />
-            <WorkCard hasBrand={false} img={{ desktop: "/assets/work/flims/desktop/3.png", mobile: "/assets/work/flims/mobile/3.png", alt: "" }} name="Oh Ma! bengali" category="Series: Oh! Mother" href="https://www.youtube.com/watch?v=ByzThabh0t8&ab_channel=pshiftbis" grid="aspect-[170/220] lg:aspect-[259/250]" />
-            <WorkCard hasBrand={false} img={{ desktop: "/assets/work/flims/desktop/4.png", mobile: "/assets/work/flims/mobile/4.png", alt: "" }} name="Spook Seekers" category="Short Film" href="https://www.youtube.com/watch?v=7h9w3H93M0o&ab_channel=TripolarTV" grid="col-span-1 row-span-1 lg:row-span-2 aspect-[170/220] lg:aspect-[259/524]" />
-            <WorkCard hasBrand={false} img={{ desktop: "/assets/work/flims/desktop/5.png", mobile: "/assets/work/flims/mobile/5.png", alt: "" }} name="Oh Ma! Hindi" category="Series: Oh! Mother" href="https://www.youtube.com/watch?v=7h9w3H93M0o&ab_channel=TripolarTV" grid="col-span-1 row-span-1 lg:row-span-2 aspect-[170/220] lg:aspect-[259/524]" />
-            <WorkCard hasBrand={false} img={{ desktop: "/assets/work/flims/desktop/6.png", mobile: "/assets/work/flims/mobile/6.png", alt: "" }} name="Ami Chini Go" category="Film: Adda" href="https://www.youtube.com/watch?v=jNUINOVYYoE&ab_channel=SaregamaTamil" grid="col-span-1 lg:col-span-3 row-span-1 lg:row-span-2 aspect-[170/220] lg:aspect-[826/524]" />
+            <WorkCard hasBrand={false} img={{ desktop: "/assets/work/flims/desktop/2.png", mobile: "/assets/work/flims/mobile/2.png", alt: "" }} name="Shut Up" category="Film: Adda" href="https://www.youtube.com/watch?v=9IsolpQ5zvo&list=RD9IsolpQ5zvo&start_radio=1" grid="col-span-1 row-span-1 lg:row-span-2 aspect-[170/220] lg:aspect-[259/524]" />
+            <WorkCard hasBrand={false} img={{ desktop: "/assets/work/flims/desktop/3.png", mobile: "/assets/work/flims/mobile/3.png", alt: "" }} name="Oh Ma! bengali" category="Series: Oh! Mother" href="https://www.youtube.com/watch?v=AV1FwBNOcLY&list=RDAV1FwBNOcLY&start_radio=1" grid="aspect-[170/220] lg:aspect-[259/250]" />
+            <WorkCard hasBrand={false} img={{ desktop: "/assets/work/flims/desktop/4.png", mobile: "/assets/work/flims/mobile/4.png", alt: "" }} name="Spook Seekers" category="Short Film" href="https://www.youtube.com/watch?v=QUlaSL1hKSQ" grid="col-span-1 row-span-1 lg:row-span-2 aspect-[170/220] lg:aspect-[259/524]" />
+            <WorkCard hasBrand={false} img={{ desktop: "/assets/work/flims/desktop/5.png", mobile: "/assets/work/flims/mobile/5.png", alt: "" }} name="Oh Ma! Hindi" category="Series: Oh! Mother" href="https://www.youtube.com/watch?v=dmIOOhwQqM8&list=RDdmIOOhwQqM8&start_radio=1" grid="col-span-1 row-span-1 lg:row-span-2 aspect-[170/220] lg:aspect-[259/524]" />
+            <WorkCard hasBrand={false} img={{ desktop: "/assets/work/flims/desktop/6.png", mobile: "/assets/work/flims/mobile/6.png", alt: "" }} name="Ami Chini Go" category="Film: Adda" href="https://www.youtube.com/watch?v=2jgeQHw4FBY&t=2s" grid="col-span-1 lg:col-span-3 row-span-1 lg:row-span-2 aspect-[170/220] lg:aspect-[826/524]" />
         </section>
     )
 }
